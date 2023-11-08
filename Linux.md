@@ -1,21 +1,21 @@
 **Question: What is Linux?**
-Explanation:  Linux is like the engine of a car. It's the core software that makes your computer run. Just like different cars have different features, there are different versions of Linux that look and feel different but still use the same engine underneath. 
+**Explanation:**  Linux is like the engine of a car. It's the core software that makes your computer run. Just like different cars have different features, there are different versions of Linux that look and feel different but still use the same engine underneath. 
 **Technical Answer:**  Linux is a free and open-source Unix-like operating system kernel. It's the core software that manages hardware resources and provides services for computer programs. Multiple Linux distributions (distros) exist, such as Ubuntu, Fedora, and Debian, providing different user experiences built on top of the Linux kernel.
 
 **Question: What is the difference between Linux and Unix?**
-Explanation:  Imagine two cousins who grew up together but chose different paths in life. Unix is the older cousin who went the corporate route, while Linux is the younger one who decided to share his talents with everyone for free. They have a lot in common but also some distinct differences.
+**Explanation:**  Imagine two cousins who grew up together but chose different paths in life. Unix is the older cousin who went the corporate route, while Linux is the younger one who decided to share his talents with everyone for free. They have a lot in common but also some distinct differences.
 **Technical Answer:**  Unix is a proprietary operating system originally developed in the 1960s. It's known for its stability, multi-user capabilities, and security. Linux, on the other hand, is free and open-source, inspired by Unix but not derived from it. Linux provides similar functionality to Unix but with greater flexibility and availability across various hardware platforms.
 
 **Question: What is a Linux distribution (distro)?**
-Explanation:  If Linux is the engine, a Linux distribution is the whole car. It's a version of Linux that comes with its own style, features, and additional tools, like a GPS or sunroof, to make your driving experience unique.
+**Explanation:**  If Linux is the engine, a Linux distribution is the whole car. It's a version of Linux that comes with its own style, features, and additional tools, like a GPS or sunroof, to make your driving experience unique.
 **Technical Answer:** A Linux distribution is a complete operating system built around the Linux kernel. It includes the kernel itself, system libraries, user applications, and a package management system. Each distro tailors these components to specific use-cases, user preferences, or system requirements, leading to a wide variety of distributions like Ubuntu, CentOS, and Arch Linux.
 
 **Question: What is a Stateless Linux Server?**
-Explanation: A stateless Linux server is like a sketchpad that erases itself after each drawing. It doesn't remember anything from one session to the next.
+**Explanation:** A stateless Linux server is like a sketchpad that erases itself after each drawing. It doesn't remember anything from one session to the next.
 **Technical Answer:** A stateless Linux server does not store any session information about its clients. Each client interaction is processed independently without relying on information from previous interactions.
 
 **Question: Explain the features of Stateless Linux Server?**
-Explanation: Features of a stateless server include not needing to remember past interactions, making it easier to manage, more secure, and better at handling lots of traffic.
+**Explanation:** Features of a stateless server include not needing to remember past interactions, making it easier to manage, more secure, and better at handling lots of traffic.
 **Technical Answer:** Features include reduced complexity as no state is maintained, increased security as no sensitive data is stored, better scalability, and potential for load balancing.
 
 **Question: Explain Linux Boot Process.**
@@ -30,7 +30,7 @@ Explanation: Features of a stateless server include not needing to remember past
 8. system startup BIOS -> MBR Boot Loader -> GRUB -> RUNLEVEL -> INIT 
 
 **Question:  How do you troubleshoot a Linux OS that fails to boot?**
-Explanation: Troubleshooting a Linux OS that fails to boot is like being a detective trying to figure out why a car won't start. You check the battery, the fuel, the engine, and other parts to find the problem.
+**Explanation:** Troubleshooting a Linux OS that fails to boot is like being a detective trying to figure out why a car won't start. You check the battery, the fuel, the engine, and other parts to find the problem.
 **Technical Answer:** Troubleshooting a Linux OS that fails to boot involves checking various components such as the bootloader (GRUB), kernel, initramfs, and system files. Using recovery mode or a live CD to access the system, examining log files like /var/log/syslog or /var/log/dmesg, and checking file system integrity with fsck are part of the process. Resolving issues with bootloaders, repairing broken packages, and ensuring correct kernel parameters are also crucial steps.
 
 **Question: What is a Boot Loader ?**
@@ -43,62 +43,62 @@ Following are a series of tasks that a typical Boot Loader is expected to perfor
     4. Finally, finish up the system environment setup and transfer the control to the kernel.
 
 **Question: What is a kernel ?**
-Explanation: Consider any school with no teacher in it. How will the situations be in such schools? As you can imagine the consequences with not much effort, the similar output will be found if an Operating system does not include a Kernel in it. Without a kernel, you can't have an Operating System that actually works. All the Operating System's like Windows, Mac OS X, and Linux have different kernels in it. Kernel acts as a central component of any Operating System, similar to nucleus of any cell.
+**Explanation:** Consider any school with no teacher in it. How will the situations be in such schools? As you can imagine the consequences with not much effort, the similar output will be found if an Operating system does not include a Kernel in it. Without a kernel, you can't have an Operating System that actually works. All the Operating System's like Windows, Mac OS X, and Linux have different kernels in it. Kernel acts as a central component of any Operating System, similar to nucleus of any cell.
 **Technical Answer:** Kernel handles the complicated job of managing the resources efficiently. It should keep checking the availability of memory in your system and place the required applications in the proper memory location. It is also responsible for completing any internal task quickly by optimizing the usage of the processor and preventing the deadlocks. There are three types of kernels, Monolythic, Micro and Hybrid.
 
 **Question: What are kernel modules ?**
 **Technical Answer:** A kernel module is a piece of software whose aim is to extend the Linux kernel with a new feature. A kernel module can be a device driver, in which case it would control and manage a particular hardware device, hence the name device driver. A module can also add a framework support (for example IIO, the Industrial Input Output framework), extend an existing framework, or even a new filesystem or an extension of it. The thing to keep in mind is that kernel modules are not always device drivers, whereas device drivers are always kernel modules.
 
 **Question: Where are the kernel modules located?**
-Explanation: Kernel modules are like add-on parts for a car stored in a specific garage. You can add them to the car to give it new features or improve its performance.
+**Explanation:** Kernel modules are like add-on parts for a car stored in a specific garage. You can add them to the car to give it new features or improve its performance.
 **Technical Answer:**  Kernel modules are typically located in /lib/modules/$(uname -r) directory. They are loadable kernel modules that can be loaded or unloaded from the kernel as needed.
 
 **Question: First process started by the kernel in Linux and its process id ?**
-Explanation: The first process is like the first employee to arrive and open the office in the morning. Its job is to get everything ready for the other employees. Its ID badge is always number 1.
+**Explanation:** The first process is like the first employee to arrive and open the office in the morning. Its job is to get everything ready for the other employees. Its ID badge is always number 1.
 **Technical Answer:** The first process started by the Linux kernel is init (or systemd in some distributions), and its process ID (PID) is always 1.
 
 **Question: What are runlevels in Linux?**
-Explanation: Runlevels in Linux are like different gears in a car. Each gear (or runlevel) tells your computer to run in a different way. Some gears are for troubleshooting, some are for normal use, and others are for shutting down or rebooting.
+**Explanation:** Runlevels in Linux are like different gears in a car. Each gear (or runlevel) tells your computer to run in a different way. Some gears are for troubleshooting, some are for normal use, and others are for shutting down or rebooting.
 **Technical Answer:** Runlevels are predefined modes of operation in Unix-based systems. Each runlevel represents a different state of the system and dictates which services or processes should be running. For example, runlevel 3 might be multi-user text mode, while runlevel 5 is multi-user graphical mode. The concept of runlevels is often used in the SysV init system.
 
 **Question: What is a shell?**
-Explanation: A shell is like a translator between you and your computer. You tell it what you want in a language you both understand, and the shell makes sure the computer knows what to do.
+**Explanation:** A shell is like a translator between you and your computer. You tell it what you want in a language you both understand, and the shell makes sure the computer knows what to do.
 **Technical Answer:** A shell is a command-line interpreter that provides a user interface for accessing an operating system's services. It interprets user commands and translates them into actions the operating system can perform. There are various shells available in Linux, such as Bash, Zsh, and Tcsh, each with its own features and syntax.
 
 **Question: How many types of Shells are there in Linux?**
-Explanation: Just like there are different languages people can speak, there are different types of shells, or "languages," your computer can understand and respond to.
+**Explanation:** Just like there are different languages people can speak, there are different types of shells, or "languages," your computer can understand and respond to.
 **Technical Answer:**  There are several types of shells in Linux, including the Bourne Shell (sh), the C Shell (csh), the Korn Shell (ksh), the Bourne Again Shell (bash), and the Z Shell (zsh).
 
 **Question: What is the command line?**
-Explanation: The command line is like a chat window with your computer. You type in commands, and the computer does what you ask. It's a powerful way to communicate directly with your computer without using a mouse.
+**Explanation:** The command line is like a chat window with your computer. You type in commands, and the computer does what you ask. It's a powerful way to communicate directly with your computer without using a mouse.
 **Technical Answer:** The command line, or terminal, is a text-based interface used to interact with the operating system. Users enter commands as text, and the operating system executes them. It's a powerful tool that allows for complex operations, scripting, and direct access to system functions.
 
 **Question: Explain LILO.**
-Explanation:  LILO is like a traffic cop at a crossroad, deciding which operating system to boot when you start your computer.
+**Explanation:**  LILO is like a traffic cop at a crossroad, deciding which operating system to boot when you start your computer.
 **Technical Answer:**  LILO (Linux Loader) is a boot loader for Linux. It's responsible for loading the Linux kernel into memory and initiating the boot process.
 
 **Question: What is the init process in Linux?**
-Explanation: The init process in Linux is like the master switch that turns everything on when you start your computer. It's the first thing that runs and sets up everything else you need.
+**Explanation:** The init process in Linux is like the master switch that turns everything on when you start your computer. It's the first thing that runs and sets up everything else you need.
 **Technical Answer:** The init process is the first process started by the Linux kernel and has a process ID (PID) of 1. It is responsible for starting and managing all other processes on the system, either directly or by delegating to other process managers. In modern systems, traditional init has been replaced by systems like systemd or Upstart, providing more features and better handling of dependencies.
 
 **Question: What do you understand about the standard streams?**
-Explanation: Standard streams are like pipes in your house. One brings in fresh water (input), one drains away dirty water (output), and one handles unexpected leaks (errors).
+**Explanation:** Standard streams are like pipes in your house. One brings in fresh water (input), one drains away dirty water (output), and one handles unexpected leaks (errors).
 **Technical Answer:** Standard streams are pre-established communication channels between a program and its environment: standard input (stdin), standard output (stdout), and standard error (stderr).
 
 **Question: What is the difference between a process and a thread?**
-Explanation: A process is like a worker in an office doing a job, while a thread is a specific task the worker performs. Multiple threads mean the worker is multitasking.
+**Explanation:** A process is like a worker in an office doing a job, while a thread is a specific task the worker performs. Multiple threads mean the worker is multitasking.
 **Technical Answer:** A process is an instance of a program in execution. It's an independent unit with its own address space. A thread, however, is the smallest unit of processing and executes within the context of a process. Threads in the same process share resources and address space.
 
 **Question: What is the difference between a process and a daemon in Linux?**
-Explanation: A process is like a worker in an office doing a specific task, while a daemon is like the janitor working in the background, keeping everything running smoothly without much interaction.
+**Explanation:** A process is like a worker in an office doing a specific task, while a daemon is like the janitor working in the background, keeping everything running smoothly without much interaction.
 **Technical Answer:** A process is an instance of a running program that performs a specific task or set of tasks. A daemon is a special type of process that runs in the background, often initiated at system startup, and does not interact with users directly. Daemons provide various services to the system and other processes.
 
 **Question: Explain Process Management System Calls in Linux?**
-Explanation: Process management system calls are like the commands a manager gives to start, stop, or manage different tasks and workers in an office.
+**Explanation:** Process management system calls are like the commands a manager gives to start, stop, or manage different tasks and workers in an office.
 **Technical Answer:** Process management system calls in Linux include fork() for creating a new process, exit() for terminating a process, wait() for making a process wait until its child processes finish, and exec() for replacing the process memory space with a new program.
 
 **Question: What do you mean by a Process States in Linux?**
-Explanation: Process states are like different moods for your computer's tasks. Some tasks are active and running, some are waiting in line, some are sleeping, and others have finished their job or are stopped.
+**Explanation:** Process states are like different moods for your computer's tasks. Some tasks are active and running, some are waiting in line, some are sleeping, and others have finished their job or are stopped.
 **Technical Answer:** In Linux, a process can be in one of several states, including:
 Running: The process is either running or ready to run.
 Interruptible Sleep: The process is sleeping, waiting for some condition to be met or event to happen.
@@ -107,7 +107,7 @@ Stopped: The process has been stopped, usually by a signal.
 Zombie: The process has completed, but still has an entry in the process table to report its exit status to its parent process.
 
 **Question: what is a Zombie Process ?**
-Explanation: A zombie process is like a finished task that's still hanging around on your to-do list. It's done its job, but it's still there taking up space until you cross it off the list.
+**Explanation:** A zombie process is like a finished task that's still hanging around on your to-do list. It's done its job, but it's still there taking up space until you cross it off the list.
 **Technical Answer:** A zombie process is a process that has completed execution but still has an entry in the process table. It occurs when a parent process fails to call wait() to retrieve its child's exit status, leaving the terminated child process in a "defunct" state.
 
 **Question: What is an Orphan Process ?**
@@ -116,41 +116,41 @@ An intentionally orphaned process runs in the background without any manual supp
 An unintentionally orphaned process is created when its parent process crashes or terminates. Unintentional orphan processes can be avoided using the process group mechanism.
 
 **Question: Describe how a parent and child process communicates with each other?**
-Explanation: It's like a parent and child talking through a walkie-talkie. They can send messages back and forth to each other.
+**Explanation:** It's like a parent and child talking through a walkie-talkie. They can send messages back and forth to each other.
 **Technical Answer:** A parent and child process can communicate with each other through various forms of inter-process communication (IPC), such as pipes, signals, message queues, shared memory, or semaphores.
 
 **Question: What do you understand about process scheduling in Linux?**
-Explanation: Process scheduling in Linux is like a juggler keeping several balls in the air. The system has to manage multiple tasks at once, deciding which ones get attention and in what order to keep everything running smoothly.
+**Explanation:** Process scheduling in Linux is like a juggler keeping several balls in the air. The system has to manage multiple tasks at once, deciding which ones get attention and in what order to keep everything running smoothly.
 **Technical Answer:** Process scheduling in Linux is handled by the kernel, which uses scheduling algorithms to determine the order and amount of CPU time allocated to each process. Common scheduling algorithms include Completely Fair Scheduler (CFS) for general-purpose tasks, and Real-Time Scheduling for time-critical tasks. The scheduler ensures efficient CPU utilization and responsive multitasking.
 
 **Question: How do you list all the processes running in Linux?**
-Explanation: Listing all processes is like taking a roll call to see who's currently doing something on your computer.
+**Explanation:** Listing all processes is like taking a roll call to see who's currently doing something on your computer.
 **Technical Answer:** The `ps` command lists currently running processes. Using options like ps aux provides more detailed information.
 
 **Question: How do you find the process ID (PID) of a running process?**
-Explanation: Finding the PID of a running process is like looking up a person's ID number. It's a unique number that identifies what's running on your computer.
+**Explanation:** Finding the PID of a running process is like looking up a person's ID number. It's a unique number that identifies what's running on your computer.
 **Technical Answer:** The ps command can display the PID alongside other process information. Additionally, pidof can be used to find the PID of a specific process by name.
 
 **Question: What is the /proc file system?**
-Explanation: The /proc filesystem is like a real-time bulletin board that displays information about your computer's current state, like what's running and how resources are being used.
+**Explanation:** The /proc filesystem is like a real-time bulletin board that displays information about your computer's current state, like what's running and how resources are being used.
 **Technical Answer:** The /proc filesystem is a pseudo-filesystem that provides an interface to kernel data structures. It's used to access information about the system and running processes.
 These answers should provide a comprehensive understanding of these Linux concepts and **Questions in both simple and technical language.
 
 **Question: How do you kill the program using one port in Linux?**
-Explanation: Imagine you have a pipe, and water is flowing through it. But you want to use this pipe for something else. First, you need to stop the water (or program) that's currently using it. In the computer world, you can find out which program is using the pipe (or port) and ask it nicely to stop, so you can use the port for something else.
+**Explanation:** Imagine you have a pipe, and water is flowing through it. But you want to use this pipe for something else. First, you need to stop the water (or program) that's currently using it. In the computer world, you can find out which program is using the pipe (or port) and ask it nicely to stop, so you can use the port for something else.
 **Technical Answer:** In Linux, every network service listens on a port. If you want to stop a service (or kill a process) that's using a specific port, you first need to find the process ID (PID) that's associated with that port. This can be done using the netstat or lsof command. Once you have the PID, you can use the kill command to terminate the process.
 Example: `sudo kill $(sudo lsof -t -i:<port_number>)`
 
 **Question: How do you schedule recurring tasks in Linux?**
-Explanation: Scheduling recurring tasks in Linux is like setting up automatic reminders or alarms. You tell the computer when and what you want to be done regularly, and it takes care of it for you.
+**Explanation:** Scheduling recurring tasks in Linux is like setting up automatic reminders or alarms. You tell the computer when and what you want to be done regularly, and it takes care of it for you.
 **Technical Answer:** Recurring tasks in Linux can be scheduled using cron jobs. Cron is a time-based job scheduler that runs commands at specified intervals. Users can add entries to their crontab file using the crontab -e command, specifying the schedule and command to run.
 
 **Question: Difference between cron and anacron**
-Explanation: Cron is like setting a regular alarm clock that rings at the same time every day, even if you're not home. Anacron is more like a reminder system that'll make sure to remind you about something even if you missed the initial reminder.
+**Explanation:** Cron is like setting a regular alarm clock that rings at the same time every day, even if you're not home. Anacron is more like a reminder system that'll make sure to remind you about something even if you missed the initial reminder.
 **Technical Answer:** Cron is a time-based job scheduler that runs tasks at specified intervals. Anacron is similar but is used primarily for tasks that don't necessarily need to run at an exact time. Anacron can run missed tasks once the system is up.
 
 **Question: What are some common Linux commands?**
-Explanation: Think of Linux commands as basic instructions you can give to your computer, like "show me what's inside this folder" or "make a copy of this file." They're simple phrases that help you navigate and manage your files.
+**Explanation:** Think of Linux commands as basic instructions you can give to your computer, like "show me what's inside this folder" or "make a copy of this file." They're simple phrases that help you navigate and manage your files.
 **Technical Answer:** Some common Linux commands include:
 ls: Lists directory contents.
 cd: Changes the current directory.
@@ -163,27 +163,27 @@ chmod: Changes file permissions.
 sudo: Executes a command with superuser privileges.
 
 **Question: How do you check the status of a service or daemon in Linux?**
-Explanation: Checking the status of a service or daemon in Linux is like checking if a store is open or closed. You use a specific command to see if the service is running, stopped, or experiencing problems.
+**Explanation:** Checking the status of a service or daemon in Linux is like checking if a store is open or closed. You use a specific command to see if the service is running, stopped, or experiencing problems.
 **Technical Answer:** You can check the status of a service or daemon in Linux using the systemctl status <service_name> command if the system uses systemd, or the /etc/init.d/<service_name> status command for systems using the init system. This will provide information on whether the service is active, inactive, or has failed.
 
 **Question: INODE and Process Id**
-Explanation: An INODE is like a detailed index card in a library that contains all the information about a book except its name. A Process ID is like a unique ID badge for every employee in a large office, so everyone knows who's who.
+**Explanation:** An INODE is like a detailed index card in a library that contains all the information about a book except its name. A Process ID is like a unique ID badge for every employee in a large office, so everyone knows who's who.
 **Technical Answer:** An INODE is a data structure on a filesystem that stores all the information about a file except its name and actual data. 
 
 **Question: What is a root user?**
-Explanation: The root user is like the master key to your computer. It has the power to open every door and change anything. Because it's so powerful, you should use it carefully to avoid any accidental damage.
+**Explanation:** The root user is like the master key to your computer. It has the power to open every door and change anything. Because it's so powerful, you should use it carefully to avoid any accidental damage.
 **Technical Answer:** The root user is the administrative user in a Linux environment with full access to all files and commands. The root user has the highest level of access, allowing them to perform any administrative tasks, modify system settings, and manage other user accounts. Due to its elevated privileges, it's recommended to use the root user sparingly and with caution.
 
 **Question: How do you create a user account?**
-Explanation: Creating a user account is like setting up a new mailbox for someone. It gives them their own space to receive messages and store their things.
+**Explanation:** Creating a user account is like setting up a new mailbox for someone. It gives them their own space to receive messages and store their things.
 **Technical Answer:** A user account is created using the useradd command, followed by the username. Additional options can set a password, create a home directory, and more.
 
 **Question: What is the difference between /etc/passwd and /etc/shadow files?**
-Explanation: The /etc/passwd and /etc/shadow files are like membership lists for a club. The /etc/passwd file is the public list that shows who's a member, while the /etc/shadow file is the private list that contains sensitive information like members' passwords.
+**Explanation:** The /etc/passwd and /etc/shadow files are like membership lists for a club. The /etc/passwd file is the public list that shows who's a member, while the /etc/shadow file is the private list that contains sensitive information like members' passwords.
 **Technical Answer:** The /etc/passwd file contains user account information, including usernames, user IDs, group IDs, home directories, and default shells. The /etc/shadow file contains the password information for the user accounts in a secure and encrypted format, along with password aging information.
 
 **Question: What is the purpose of the sudoers file in Linux, and how do you configure sudo access for users?**
-Explanation: The sudoers file is like a VIP list at a club. It decides who gets special permissions to do things that regular users can't. You can add people to the list and specify exactly what they're allowed to do.
+**Explanation:** The sudoers file is like a VIP list at a club. It decides who gets special permissions to do things that regular users can't. You can add people to the list and specify exactly what they're allowed to do.
 **Technical Answer:** The sudoers file is a configuration file for the sudo command, which allows users to run programs with the security privileges of another user. By editing this file, you can specify which users or groups have permission to use sudo, and the commands for which they have privileges.
 
 **Question:  Explain chown, chmod, chage commands**
@@ -194,94 +194,94 @@ chmod: Changes the file mode bits of a file or directory (permissions).
 chage: Changes user password expiry information, managing the aging of passwords.
 
 **Question: How to lock a user account in Linux?**
-Explanation: Locking a user account is like taking away someone's keycard so they can't enter a building.
+**Explanation:** Locking a user account is like taking away someone's keycard so they can't enter a building.
 **Technical Answer:** A user account can be locked using the passwd -l command, which disables the password by prefixing it with a special character.
 
 **Question: What is umask?**
-Explanation: umask is like setting default privacy settings for your files. When you create a new file, umask decides who can read, write, or execute that file by default.
+**Explanation:** umask is like setting default privacy settings for your files. When you create a new file, umask decides who can read, write, or execute that file by default.
 **Technical Answer:** umask, or user file-creation mode mask, is a default value that determines the permissions that are set for newly created files and directories. It's a way of setting default access rights so that when a user creates a file, it doesn't have more permissions than intended.
 
 **Question: Elaborate all the file permissions in Linux.**
-Explanation: File permissions in Linux are like rules at a private club. They decide who can come in (read), who can change things (write), and who can run activities or programs (execute).
+**Explanation:** File permissions in Linux are like rules at a private club. They decide who can come in (read), who can change things (write), and who can run activities or programs (execute).
 **Technical Answer:** Linux file permissions are based on three types: read (r), write (w), and execute (x). These permissions can be set for three categories of users: the file owner, the group to which the file belongs, and others. Using the chmod command, you can modify these permissions.
 
 **Question: What is the chmod command in Linux, and how do you use it?**
-Explanation: The chmod command is like changing the locks on your doors. It controls who can come in (read), rearrange furniture (write), or throw a party (execute).
+**Explanation:** The chmod command is like changing the locks on your doors. It controls who can come in (read), rearrange furniture (write), or throw a party (execute).
 **Technical Answer:** The chmod command changes the file's mode (permissions). It can be used in numerical form (e.g., chmod 755 filename) or symbolic form (e.g., chmod u+x filename) to modify the file permissions.
 
 **Question: How to check the default route and routing table?**
-Explanation: Checking the default route and routing table is like looking at a map to see which highways your car will take by default to get out of your town, and seeing all the other possible routes it can take.
+**Explanation:** Checking the default route and routing table is like looking at a map to see which highways your car will take by default to get out of your town, and seeing all the other possible routes it can take.
 **Technical Answer:** The route or ip route command can be used to check the default route and routing table. It shows the IP routing table which is a set of rules that determines where network traffic will be directed.
 
 **Question: How do you troubleshoot network connectivity issues in Linux?**
-Explanation: Troubleshooting network issues is like solving a mystery of why your letter didn't reach its destination. You check each step of the journey to find where it got lost.
+**Explanation:** Troubleshooting network issues is like solving a mystery of why your letter didn't reach its destination. You check each step of the journey to find where it got lost.
 **Technical Answer:** Troubleshooting involves checking the network configuration, using commands like ping, traceroute, ifconfig/ip, and examining firewall settings to isolate the connectivity problem.
 
 **Question: What is SMTP?**
-Explanation: SMTP is like the postal service for emails. It's the set of rules that allows your email to be sent from your computer to someone else's, wherever they are in the world.
+**Explanation:** SMTP is like the postal service for emails. It's the set of rules that allows your email to be sent from your computer to someone else's, wherever they are in the world.
 **Technical Answer:** Simple Mail Transfer Protocol (SMTP) is an Internet standard communication protocol for electronic mail transmission. Mail servers and other message transfer agents use SMTP to send and receive mail messages. Client email software typically uses SMTP only for sending messages to a mail server for relaying.
 
 **Question: What is the difference between UDP and TCP?**
 Answer: UDP and TCP are like two different ways of sending mail. UDP is like sending a postcard: it's fast, but there's no guarantee it'll arrive, and there's no way to know if it gets lost. TCP is like sending a registered letter: it's a bit slower because you get a receipt and confirmation of delivery.
 
 **Question: What is network bonding in Linux?**
-Explanation: Network bonding is like combining multiple internet cables into one. By doing this, you can increase the speed and reliability of your internet connection.
+**Explanation:** Network bonding is like combining multiple internet cables into one. By doing this, you can increase the speed and reliability of your internet connection.
 **Technical Answer:** Network bonding, also known as NIC teaming, involves combining multiple network interfaces into a single logical interface. This can provide increased bandwidth, load balancing, or fault tolerance by allowing traffic to be distributed or rerouted in case of a failure.
 
 **Question: How do you set up a static IP address in Linux using the command-line interface?**
-Explanation: Setting up a static IP address is like picking a permanent parking spot for your car. Instead of moving around, your computer always 'parks' at the same address on the network.
+**Explanation:** Setting up a static IP address is like picking a permanent parking spot for your car. Instead of moving around, your computer always 'parks' at the same address on the network.
 **Technical Answer:** To set up a static IP address, you need to edit the network configuration files or use network management commands like ifconfig or ip addr and specify the desired IP address, subnet mask, gateway, and DNS servers.
 
 **Question: Different network bonding modes used in Linux**
-Explanation: Different bonding modes are like different strategies for a team of relay racers. Some modes are about speed, some are about reliability, and some are a mix of both.
+**Explanation:** Different bonding modes are like different strategies for a team of relay racers. Some modes are about speed, some are about reliability, and some are a mix of both.
 **Technical Answer:** Network bonding modes include balance-rr (round-robin), active-backup, balance-xor, broadcast, 802.3ad (LACP), balance-tlb (adaptive transmit load balancing), and balance-alb (adaptive load balancing).
 
 **Questions: what are advantages of using NIC teaming**
-Explanation: NIC teaming is like having multiple internet connections to your home. If one goes out, you still have internet, and when they're all working, you have a faster connection.
+**Explanation:** NIC teaming is like having multiple internet connections to your home. If one goes out, you still have internet, and when they're all working, you have a faster connection.
 **Technical Answer:** NIC teaming provides redundancy and load balancing for network interfaces. If one NIC fails, another can take over, ensuring network availability. It can also aggregate bandwidth, increasing the overall network throughput.
 
 **Question: What is Port number of Ping**
-Explanation: Ping doesn't have a specific port number; it's like knocking on the door to see if anyone's home, rather than sending a letter to a specific mailbox.
+**Explanation:** Ping doesn't have a specific port number; it's like knocking on the door to see if anyone's home, rather than sending a letter to a specific mailbox.
 **Technical Answer:** Ping uses ICMP (Internet Control Message Protocol), which does not operate on a port level. It's part of the IP layer and is used to send error messages and operational information.
 
 **Question: What is the iptables command, and how to use it for network filtering?**
-Explanation: The iptables command is like a security guard for your computer's network, deciding who gets in and who doesn't. You can set rules to allow or block traffic to keep your network secure.
+**Explanation:** The iptables command is like a security guard for your computer's network, deciding who gets in and who doesn't. You can set rules to allow or block traffic to keep your network secure.
 **Technical Answer:** iptables is a user-space utility program that allows a system administrator to configure the IP packet filter rules of the Linux kernel firewall. Rules can be set to filter traffic based on protocols, ports, source and destination IP addresses, and other criteria. iptables is often used to create complex network traffic filtering arrangements for security and network management.
 
 **Question: What is pipe?**
-Explanation: A pipe is like a conveyor belt in a factory that takes the output of one machine and feeds it directly into the next machine.
+**Explanation:** A pipe is like a conveyor belt in a factory that takes the output of one machine and feeds it directly into the next machine.
 **Technical Answer:** A pipe is a form of redirection that is used in Linux and other Unix-like operating systems to send the output of one program to another program for further processing.
 
 **Question: What is Swap Space?**
-Explanation: Swap space is like an overflow parking lot. When your computer's memory is full, it uses swap space to store extra information temporarily.
+**Explanation:** Swap space is like an overflow parking lot. When your computer's memory is full, it uses swap space to store extra information temporarily.
 **Technical Answer:** Swap space is a form of virtual memory. When the physical RAM is full, the operating system can move inactive pages to swap space to free up RAM for active processes.
 
 **Question:  What is the difference between hard links and soft links?**
-Explanation: Imagine two shortcuts to your house. A hard link is a direct shortcut, while a soft link is like a note telling you where to go. If your house moves, the direct shortcut won't work, but the note still tells you where to find it.
+**Explanation:** Imagine two shortcuts to your house. A hard link is a direct shortcut, while a soft link is like a note telling you where to go. If your house moves, the direct shortcut won't work, but the note still tells you where to find it.
 **Technical Answer:** A hard link is a direct reference to the data on the disk, sharing the same inode as the original file. A soft link (symbolic link) is a separate file that points to the target file's path. If the original file is moved or deleted, the hard link remains valid, but the soft link breaks.
 
 **Question: How do users create a symbolic link in Linux?**
-Explanation: Creating a symbolic link is like making a signpost that points to a specific place. You tell your computer where the sign should point, and it creates a shortcut for you.
+**Explanation:** Creating a symbolic link is like making a signpost that points to a specific place. You tell your computer where the sign should point, and it creates a shortcut for you.
 **Technical Answer:** Users create a symbolic link using the ln -s command, specifying the target file and the symbolic link name.
 
 **Question: What is the ulimit command, and how do you use it?**
-Explanation: The ulimit command sets boundaries for how much of certain resources (like memory or file size) a process can use. It's like giving a child an allowance to control their spending.
+**Explanation:** The ulimit command sets boundaries for how much of certain resources (like memory or file size) a process can use. It's like giving a child an allowance to control their spending.
 **Technical Answer:** ulimit sets user limits for system resources. It can limit file sizes, number of open files, and more. Usage includes ulimit [options] [limit].
 
 **Question: How do you mount and unmount filesystems in Linux?**
-Explanation: Mounting a filesystem is like opening a book to read it. Unmounting is like closing the book when you're done.
+**Explanation:** Mounting a filesystem is like opening a book to read it. Unmounting is like closing the book when you're done.
 **Technical Answer:** Mounting a filesystem attaches it to a directory structure, making its contents accessible. The mount command is used for this purpose. Unmounting with the umount command detaches it, ensuring no further access.
 
 **Question: How do you format a disk in Linux?**
-Explanation: Formatting a disk is like clearing out and rearranging a room to make it ready for a new purpose.
+**Explanation:** Formatting a disk is like clearing out and rearranging a room to make it ready for a new purpose.
 **Technical Answer:** Formatting a disk involves creating a new filesystem on the disk. The mkfs command, followed by the type of filesystem and the device name, is used for this purpose.
 
 **Question: How do you check the contents of a file without opening it in Linux?**
-Explanation: Checking the contents of a file without opening it is like peeking through a window to see what's inside a room. You can use special commands that let you quickly look at the beginning or end of a file without going through the whole thing.
+**Explanation:** Checking the contents of a file without opening it is like peeking through a window to see what's inside a room. You can use special commands that let you quickly look at the beginning or end of a file without going through the whole thing.
 **Technical Answer:** You can use commands like cat, less, more, head, and tail to view the contents of a file in Linux. cat prints the entire file, less and more allow for scrollable viewing, while head and tail show the beginning and end of the file, respectively.
 
 **Question:  What is RAID in Linux?**
-Explanation: RAID is like a team of hard drives working together to either improve performance or ensure your data is safe even if one drive fails.
+**Explanation:** RAID is like a team of hard drives working together to either improve performance or ensure your data is safe even if one drive fails.
 **Technical Answer:** RAID (Redundant Array of Independent Disks) is a way of storing data on multiple hard disks for redundancy or performance improvement. Linux supports various RAID levels, like RAID 0 (striping), RAID 1 (mirroring), and RAID 5 (parity).
 
 **Question: Explain different types of Raids.**
@@ -304,101 +304,101 @@ RAID 10: is part of a group called nested or hybrid RAID, which means it is a co
 RAID 10 uses logical mirroring to write the same data on two or more drives to provide redundancy. If one disk fails, there is a mirrored image of the data stored on another disk. Additionally, the array uses block-level striping to distribute chunks of data across different drives. This improves performance and read and write speed as the data is simultaneously accessed from multiple disks.
 
 **Question: What is LVM in Linux?**
-Explanation: LVM in Linux is like having a flexible closet organizer. It lets you resize your storage spaces, move them around, or add new ones without having to throw everything out and start over.
+**Explanation:** LVM in Linux is like having a flexible closet organizer. It lets you resize your storage spaces, move them around, or add new ones without having to throw everything out and start over.
 **Technical Answer:** Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management for the Linux kernel. It allows for flexible disk space management by abstracting the physical storage into logical volumes, making it easier to resize and manage disk space without downtime.
 
 **Question: How do you check disk space usage?**
-Explanations: Checking disk space usage is like checking how full your storage unit is. It helps you decide if you need to clear out old things or get more space.
+**Explanation**s: Checking disk space usage is like checking how full your storage unit is. It helps you decide if you need to clear out old things or get more space.
 **Technical Answer:** The df command reports file system disk space usage, and du provides the disk usage of files and directories.
 
 **Question:  What is the rsync command, and how do you use this command for synchronization?**
-Explanation: The rsync command is like a moving truck that carefully packs and moves your stuff from one place to another, making sure nothing gets left behind.
+**Explanation:** The rsync command is like a moving truck that carefully packs and moves your stuff from one place to another, making sure nothing gets left behind.
 **Technical Answer:** rsync is used for fast and versatile file copying and synchronization. It can synchronize files between local directories, different hosts, or between a local machine and a remote host. Usage includes rsync options source destination.
 
 **Question:  What is the difference between absolute and relative paths in Linux?**
-Explanation: Absolute and relative paths are like giving directions to your house. An absolute path is like giving someone your full address, while a relative path is like giving directions from where they are now (like saying "turn left at the next corner").
+**Explanation:** Absolute and relative paths are like giving directions to your house. An absolute path is like giving someone your full address, while a relative path is like giving directions from where they are now (like saying "turn left at the next corner").
 **Technical Answer:** An absolute path is a complete path from the root of the file system to a specific file or directory, starting with a /. A relative path, on the other hand, is a path that is relative to the current directory, not starting with a /, and can use . for the current directory and .. for the parent directory.
 
 **Question: How to copy a file to multiple directories in Linux?**
-Explanation: Copying a file to multiple directories is like handing out copies of a flyer to several different stores. You can use a special command that makes copies for each location all at once.
+**Explanation:** Copying a file to multiple directories is like handing out copies of a flyer to several different stores. You can use a special command that makes copies for each location all at once.
 **Technical Answer:** You can use a loop in conjunction with the cp command to copy a file to multiple directories. Alternatively, tools like rsync or shell features like brace expansion can be used to distribute a file across multiple destinations.
 
 **Question: Purpose of /etc/resolv.conf and /etc/hosts files.**
-Explanation: The /etc/resolv.conf file is like an address book for your computer, telling it where to find websites by their names. The /etc/hosts file is like a list of shortcuts for your computer, letting it know where to find certain websites without having to look them up.
+**Explanation:** The /etc/resolv.conf file is like an address book for your computer, telling it where to find websites by their names. The /etc/hosts file is like a list of shortcuts for your computer, letting it know where to find certain websites without having to look them up.
 **Technical Answer:** The /etc/resolv.conf file contains nameserver information used by the system for DNS resolution. The /etc/hosts file maps hostnames to IP addresses for small-scale or local hostname resolution.
 
 **Question:  How do you limit memory usage for commands?**
-Explanation: Think of a command as a small robot that does a job for you on the computer. Sometimes, this robot can get greedy and use too much memory, causing problems for other robots. To prevent this, you can give the robot a rule when you start it, telling it to use only a certain amount of memory. This way, it won't be greedy and will leave enough memory for other robots to work properly.
+**Explanation:** Think of a command as a small robot that does a job for you on the computer. Sometimes, this robot can get greedy and use too much memory, causing problems for other robots. To prevent this, you can give the robot a rule when you start it, telling it to use only a certain amount of memory. This way, it won't be greedy and will leave enough memory for other robots to work properly.
 **Technical Answer:** In Linux, you can limit the memory usage of a command using the ulimit shell builtin or the cgroups (control groups) feature. ulimit provides control over the resources available to the shell and processes it creates, allowing you to limit memory usage. cgroups allow for more granular control and are used for limiting resources like CPU, memory, and disk I/O for a group of processes.
 Example Command: `ulimit -v 1000000 # This limits virtual memory for all processes to approximately 1GB`
 
 **Question: How do you get the full path of a file in Linux?**
-Explanation: Imagine you're trying to tell a friend how to get to your house. Instead of just saying "My house," you give them your full address with the street name, city, and everything else they need to find it. Similarly, on a computer, if you want to know exactly where a file is, you can ask for its full address, which is called the "full path." This tells you exactly where the file is located on your computer.
+**Explanation:** Imagine you're trying to tell a friend how to get to your house. Instead of just saying "My house," you give them your full address with the street name, city, and everything else they need to find it. Similarly, on a computer, if you want to know exactly where a file is, you can ask for its full address, which is called the "full path." This tells you exactly where the file is located on your computer.
 **Technical Answer:** In Linux, the full path of a file refers to its absolute path, which starts from the root directory. To obtain the full path, you can use the realpath command or the pwd command if you're in the same directory as the file.
 Example Command: `realpath filename.txt`
 
 **Question: How to administer Linux servers?**
-Explanation: Administering Linux servers is like taking care of a fleet of cars. You need to regularly check their oil, tire pressure, and make sure they're running smoothly. Occasionally, you'll need to fix problems or add new parts.
+**Explanation:** Administering Linux servers is like taking care of a fleet of cars. You need to regularly check their oil, tire pressure, and make sure they're running smoothly. Occasionally, you'll need to fix problems or add new parts.
 **Technical Answer:** Linux server administration involves installing and configuring software, managing user accounts and permissions, monitoring system performance, setting up and maintaining network configurations, applying updates and patches, backing up data, and troubleshooting issues as they arise. Tools like SSH for remote access, cron for scheduling tasks, and system monitoring tools are essential in a sysadmin's toolkit.
 
 **Question: How do you optimize Linux system performance?**
-Explanation: Optimizing Linux system performance is like tuning a car to make it run faster and smoother. You clean up unnecessary files, adjust settings to match how you use your computer, and ensure everything is up-to-date.
+**Explanation:** Optimizing Linux system performance is like tuning a car to make it run faster and smoother. You clean up unnecessary files, adjust settings to match how you use your computer, and ensure everything is up-to-date.
 **Technical Answer:** Linux system performance can be optimized by monitoring resource usage with tools like top, htop, or nmon, and identifying bottlenecks. Kernel parameters can be tuned via the /proc filesystem or sysctl. Unnecessary services and startup programs should be disabled. Filesystem performance can be improved using appropriate mount options, and regular system updates, along with judicious use of resources, contribute to overall system optimization.
 
 **Question: What is a Linux virtual memory system?**
-Explanation: A Linux virtual memory system is like having an extra storage unit when your house gets too full. When your computer runs out of actual memory, it uses a section of the hard drive to temporarily store data.
+**Explanation:** A Linux virtual memory system is like having an extra storage unit when your house gets too full. When your computer runs out of actual memory, it uses a section of the hard drive to temporarily store data.
 **Technical Answer:** The Linux virtual memory system uses both RAM and a portion of the hard disk, called swap space, to manage the system's memory resources. It provides an abstraction layer that allows processes to have more memory available than physically present, handles memory protection, and facilitates efficient memory allocation and paging.
 
 **Question: What is Load Average in Linux ?**
-Explanation: Load average is like measuring how busy a cashier is at a store. If there are more customers than cashiers, the load is high. It's a way to see how much work is waiting to be done.
+**Explanation:** Load average is like measuring how busy a cashier is at a store. If there are more customers than cashiers, the load is high. It's a way to see how much work is waiting to be done.
 **Technical Answer:** Load average represents the average system load over a period of time. It gives the number of processes that are either in a runnable or uninterruptible state. A process in a runnable state is either using the CPU or waiting to use the CPU, while a process in an uninterruptible state is waiting for some I/O access, like disk access.
 
 **Question: What is a Shell Script ?**
-Explanation: A shell script is like a cooking recipe for your computer. It tells your computer a series of steps to follow, one after another, to complete a task.
+**Explanation:** A shell script is like a cooking recipe for your computer. It tells your computer a series of steps to follow, one after another, to complete a task.
 **Technical Answer:** A shell script is a text file containing a sequence of commands for a UNIX-based operating system. It's a script written for the shell, or command line interpreter, of an operating system.
 
 **Question: What is the find command, and how do you use it?**
-Explanation: The find command is like playing hide and seek with files. You tell your computer what to look for, and it finds files that match your description.
+**Explanation:** The find command is like playing hide and seek with files. You tell your computer what to look for, and it finds files that match your description.
 **Technical Answer:** find searches for files in a directory hierarchy. You can specify criteria like name, type, size, or modification time. An example is find / -name filename.
 
 **Question: What is strace command? Its alternatives?**
-Explanation: Think of strace as a detective tool that follows a program around, noting everything it does. This helps you understand what's happening behind the scenes. If strace is not available, you can use other detective tools like ltrace or dtrace.
+**Explanation:** Think of strace as a detective tool that follows a program around, noting everything it does. This helps you understand what's happening behind the scenes. If strace is not available, you can use other detective tools like ltrace or dtrace.
 **Technical Answer:** strace is a diagnostic, debugging, and instructional userspace utility for Linux used to monitor the system calls made by a program and the signals it receives. Its alternatives include ltrace for library call tracing and dtrace for dynamic tracing, which provide similar functionality for different use cases or system architectures.
 
 **Question: How does env command work?**
-Explanation The env command is like taking a snapshot of all the settings and preferences you have on your computer at a moment in time.
+**Explanation** The env command is like taking a snapshot of all the settings and preferences you have on your computer at a moment in time.
 **Technical Answer:** The env command in UNIX/Linux prints out the current environment variables or runs a program in a modified environment.
 
 **Question: Command to check the memory status.**
-Explanation: It's like checking the fuel gauge in your car to see how much gas you have left. In this case, you're checking how much memory your computer is using.
+**Explanation:** It's like checking the fuel gauge in your car to see how much gas you have left. In this case, you're checking how much memory your computer is using.
 **Technical Answer:** The free command is commonly used to display the amount of free and used memory in the system.
 
 **Question: Linux directory commands.**
-Explanation: Directory commands are like the basic commands you give to a filing cabinet — open this drawer, create a new folder, find this file, etc.
+**Explanation:** Directory commands are like the basic commands you give to a filing cabinet — open this drawer, create a new folder, find this file, etc.
 **Technical Answer:** Linux directory commands include ls (list directory contents), cd (change directory), mkdir (make directory), rmdir (remove directory), and pwd (print working directory).
 
 **Question: what is the command used to review boot messages.**
-Explanation: It's like reading the logbook of a ship to see everything that happened from the moment it left port.
+**Explanation:** It's like reading the logbook of a ship to see everything that happened from the moment it left port.
 **Technical Answer:** The dmesg command is used to examine or control the kernel ring buffer. It can display boot-up messages among other kernel messages.
 
 **Question: What is the File system used to access remote systems ?**
-Explanation: It's like having a special phone line that lets you access files stored in a friend's computer.
+**Explanation:** It's like having a special phone line that lets you access files stored in a friend's computer.
 **Technical Answer:** Network File System (NFS) and Server Message Block (SMB) are commonly used protocols to access files on remote systems.
 
 **Question: Command commonly used to record sessions in Linux.**
-Explanation: It's like having a tape recorder that records everything you say and do on your computer.
+**Explanation:** It's like having a tape recorder that records everything you say and do on your computer.
 **Technical Answer:** The script command is commonly used to make a typescript of everything displayed on your terminal. It records all the input and output of a terminal session.
 
 **Question: How do you secure a Linux server?**
-Explanation: Securing a Linux server is like securing your house. You change the locks (passwords), install an alarm system (firewall), and make sure your windows and doors (ports and services) are properly closed and locked unless you need them open.
+**Explanation:** Securing a Linux server is like securing your house. You change the locks (passwords), install an alarm system (firewall), and make sure your windows and doors (ports and services) are properly closed and locked unless you need them open.
 **Technical Answer:** Securing a Linux server involves setting strong passwords, configuring a firewall like iptables or UFW, keeping the system updated, disabling root login via SSH, using key-based authentication, closing unnecessary ports, setting proper permissions, and using tools like Fail2Ban to prevent brute-force attacks. Regular security audits, kernel hardening, and employing SELinux/AppArmor for mandatory access control also contribute to a server's security.
 
 **Question: What is SELinux?**
-Explanation: SELinux is like a VIP bodyguard for your computer. It has strict rules about who can do what, providing an extra layer of security by keeping a close eye on software and users, making sure they only do what they're supposed to.
+**Explanation:** SELinux is like a VIP bodyguard for your computer. It has strict rules about who can do what, providing an extra layer of security by keeping a close eye on software and users, making sure they only do what they're supposed to.
 **Technical Answer:** SELinux (Security-Enhanced Linux) is a security architecture integrated into the Linux kernel. It uses mandatory access controls (MAC) to enforce the security decisions of a central policy, limiting programs and system services to the minimum level of permissions they require to work.
 
 **Question: What is the purpose of the SSH protocol in Linux, and how do you securely connect to a remote server using SSH?**
-Explanation: SSH is like a secure phone line for computers. When you want to talk to another computer, SSH encrypts your conversation, so nobody else can listen in. To connect securely, you need the right password or a special key that proves who you are.
+**Explanation:** SSH is like a secure phone line for computers. When you want to talk to another computer, SSH encrypts your conversation, so nobody else can listen in. To connect securely, you need the right password or a special key that proves who you are.
 **Technical Answer:** SSH (Secure Shell) is a protocol used for secure communication over an unsecured network. It provides strong authentication and encrypted data communications between two computers connecting over an open network such as the internet. To connect using SSH, you can use a password or cryptographic keys for authentication.
 
 **Question: How would you recover a root password that you have forgotten on a critical server?**
@@ -656,7 +656,7 @@ init 6 tells the init process to shutdown all of the spawned processes/daemons a
 ```
 
 **Quesiton: What are ACLs ?**
-Explanation: Think of a scenario in which a particular user is not a member of group created by you but still you want to give some read or write access, how can you do it without making user a member of group, here comes in picture Access Control Lists, ACL helps us to do this trick.
+**Explanation:** Think of a scenario in which a particular user is not a member of group created by you but still you want to give some read or write access, how can you do it without making user a member of group, here comes in picture Access Control Lists, ACL helps us to do this trick.
 Basically, ACLs are used to make a flexible permission mechanism in Linux.
 From Linux man pages, ACLs are used to define more fine-grained discretionary access rights for files and directories.
 **Technical Answer:** Access control list (ACL) provides an additional, more flexible permission mechanism for file systems. It is designed to assist with UNIX file permissions. ACL allows you to give permissions for any user or group to any disc resource.
@@ -686,8 +686,8 @@ Most security and authentication errors are reported to this log file. Permissio
 In order to load, unload and inspect those rules there exists a userspace tool called iptables. Iptables is just a translator that takes the notation used to describe the specific rules and formats them into the data structures needed by the kernel, and then sends them to the kernel.
 There are numerous software packages that put a prettier face in front of the iptables rule notation, as well as providing collections of rules that are commonly used to perform certain tasks. These packages are often described as firewalls, but I consider that a misnomer. They are tools used to create and manage firewalls, but the actual firewall is always in the Linux kernel.
 
-**Question: Difference between initrd and initrmfs ? Explanation also.**
-Explanation: initrd gives us the ability to load a RAM disk by the bootloader. The loaded RAM disk is mounted as the root file system, and different programs are run from it. We can also mount a new root file system from a different device, making the bootloader move the former initrd root to a different directory, and we can unmount it. The primary design of initrd was to allow our system startup to occur in two preceding phases:
+**Question: Difference between initrd and initrmfs ? **Explanation** also.**
+**Explanation:** initrd gives us the ability to load a RAM disk by the bootloader. The loaded RAM disk is mounted as the root file system, and different programs are run from it. We can also mount a new root file system from a different device, making the bootloader move the former initrd root to a different directory, and we can unmount it. The primary design of initrd was to allow our system startup to occur in two preceding phases:
 The kernel allocates a minimum set of compiled-in drivers
 Loading of additional modules from initrd
 initrd usually functions as a block device, and compiling it into the kernel requires a file system driver such as ext2, ext3, or ext4.
