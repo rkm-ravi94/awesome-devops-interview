@@ -261,3 +261,138 @@
 **Question:** How does Jenkins support the concept of "Build Pipelines"?<br>
 **Explanation:** Jenkins Build Pipelines allow defining complex build and deployment workflows by connecting multiple jobs and triggering them based on the success or failure of other jobs.
 <br>
+
+**Question:** What are the advantages of using Master-Slave configurations in Jenkins?
+**Explanation:**: Master-Slave configurations enhance scalability, distribute the workload, and improve performance by allowing concurrent job execution on multiple nodes.
+
+**Question:** How do you add a new slave node to a Jenkins master?<br>
+**Explanation:**: You can add a new node through the Jenkins interface by configuring the node as an agent and using the provided launch method or by setting up an agent as a service.
+<br>
+
+**Question:** What is the default port for JNLP in Jenkins, and how can you change it?<br>
+**Explanation:**: The default JNLP port in Jenkins is 50000. You can change it by altering the port in the Jenkins configuration or using system properties during startup.
+<br>
+
+**Question:** How to recover admin password of Jenkins.<br>
+**Explanation:** If the Jenkins admin password is lost, it can be reset by accessing the Jenkins home directory and editing the configuration file.
+<br>
+
+**Question:** What's the process to recover the admin password in Jenkins?<br>
+**Explanation:**: To recover the password, you can navigate to the Jenkins home directory, locate the secrets/initialAdminPassword file, and retrieve the password.
+<br>
+
+**Question:** How can you reset the admin password if the initialAdminPassword file is missing or inaccessible?<br>
+**Explanation:**: It's recommended to use the jenkins.model.Jenkins.instance.securityRealm.createAccount method in the script console to create a new admin account.
+<br>
+
+**Question:** What options exist if the admin password is forgotten and can't be recovered?<br>
+**Explanation:**: If the admin password is lost and can't be recovered, accessing the Jenkins UI requires either resetting the password through the initialAdminPassword file or creating a new admin account via the script console.
+<br>
+
+**Question:** How can you secure Jenkins against vulnerabilities and attacks?<br>
+**Explanation:**: Secure Jenkins by:
+Regularly updating Jenkins and plugins.
+Enforcing strong password policies.
+Using HTTPS to encrypt communications.
+Implementing role-based access control.
+Employing security-focused plugins and monitoring tools.
+<br>
+
+**Question:** Can you name some commonly used Groovy methods/functions in Jenkins pipelines?<br>
+**Explanation:**: Some commonly used methods include node, stage, echo, sh, git, input, mail, timeout, parallel, properties, timestamps, and more.
+<br>
+
+**Question:** Which languages are supported by Jenkins and how do they work within Jenkins?<br>
+**Explanation:** Jenkins supports various languages through plugins, including Java, Python, Ruby, JavaScript, .NET, and more. These plugins enable developers to build, test, and deploy applications written in these languages by integrating with their respective build systems or tools.
+<br>
+
+**Question:** Name any 10 Jenkins Plugins.<br>
+**Answer:**
+Jenkins offers a vast array of plugins extending its functionality, enabling integrations, and enhancing capabilities. 
+Here are 10 examples:
+Pipeline: Facilitates defining jobs as code in Jenkinsfile.
+Git: Provides Git integration for source code management.
+Email Extension: Allows customizable email notifications.
+Artifactory: Enables integration with Artifactory for artifact management.
+GitHub: Provides integration with GitHub repositories.
+Docker: Offers Docker support for Jenkins jobs.
+AWS: Enables interaction with Amazon Web Services.
+Slack: Facilitates notifications and interaction with Slack.
+JUnit: Allows the parsing and displaying of JUnit test results.
+SonarQube: Facilitates integration with SonarQube for code quality analysis.
+<br>
+
+**Question:** Difference between Parallel and Sequential Jobs.<br>
+**Answer:**
+Sequential Execution: Jobs executed one after another in a sequence.
+Parallel Execution: Jobs executed concurrently, allowing multiple tasks to run simultaneously. Use sequential for dependent tasks and parallel for independent tasks or to speed up the overall build time by leveraging available resources efficiently.
+<br>
+
+**Question:** How to trigger job outside of Jenkins.<br>
+**Answer:** Jobs can be triggered outside Jenkins via Jenkins Remote Access API, allowing you to trigger builds remotely using tools or scripts. Alternatively, Jenkins provides webhooks or integrations with version control systems, chat platforms like Slack, or other CI/CD tools that can trigger jobs externally.
+<br>
+
+**Question:** Tell me the difference between an executor and an agent.<br>
+**Answer:**
+Agent: A machine (physical or virtual) that executes Jenkins builds. It can have multiple executors.
+Executor: Represents a single task within a Jenkins agent. An agent can have multiple executors, which run individual jobs or build steps.
+<br>
+
+**Question:** What is the difference between Continous Integration and Continour Delivery ?<br>
+**Answer:**
+Continuous Delivery: It's the practice of ensuring software can be released to production at any time but not necessarily automatically deployed. It focuses on automated testing, deployment-ready code, and enabling frequent releases.
+Continuous Deployment: It extends continuous delivery by automatically deploying each successful build to production without human intervention, assuming all quality checks pass.
+<br>
+
+**Question:** Where is all user data stored on the server ?<br>
+**Answer:** Jenkins user data is usually stored in the JENKINS_HOME directory. The specific location varies based on the installation and operating system but typically contains configuration, job data, logs, and plugins.
+<br>
+
+**Question:** Why can we delete freestyle jobs but not Pipeline jobs ?<br>
+**Answer:** `Freestyle jobs` can be deleted in the background because they don’t involve complex interdependencies and are standalone, 
+whereas `Pipeline jobs`, defined in Jenkinsfile, have interdependencies and are handled differently, ensuring no accidental deletion due to their code-based nature and possible complexities.
+<br>
+
+**Question:** How to pass a variable's/parameter value to another parameter ?<br>
+**Explanation:** Use Jenkins parameters to pass information from one job to another. The parameters can be defined as build parameters or environment variables, allowing data exchange between jobs.
+<br>
+
+**Question:** How to trigger a jenkins pipeline from another pipeline ?<br>
+**Explanation:** Jenkins allows pipeline job triggering via its built-in build step. Using this step, you can trigger another pipeline job from within a Jenkins pipeline.
+<br>
+
+**Question:** List me some of the authentication methodologies in Jenkins.<br>
+**Answer:** Jenkins supports various authentication methods such as LDAP, Active Directory, Jenkins’ internal user database, and third-party plugins for OAuth or SAML-based authentication.
+<br>
+
+**Question:** What are Credentials in Jenkins, and what types are supported?<br>
+**Answer:**
+Credentials: Stored authentication information used by Jenkins jobs.
+Supported types: Jenkins supports various credential types like Username/Password, Secret text, SSH private key, Certificate, Username/Password (Amazon Web Services), and more.
+<br>
+
+**Question:** Explain the difference between a Jenkins executor and a Jenkins worker node.<br>
+**Answer:**
+Executor: Represents a task within a worker node. A worker node can have multiple executors running in parallel.
+Worker Node: The physical or virtual machine where builds are executed, it can run multiple executors and handle several concurrent tasks.
+<br>
+
+**Quesiton:** How to manage secrets in Jenkins pipeline securely?<br>
+**Answer:** Jenkins offers the Credentials Binding plugin to inject credentials securely into the pipeline as environment variables without exposing sensitive data in logs.
+<br>
+
+**Question:** Explain the Jenkins shared library and its purpose.<br>
+**Answer:** Jenkins Shared Library: A collection of reusable pipeline code. It enables sharing common code, functions, and procedures across multiple pipelines, improving maintainability and readability.
+<br>
+
+**Question:** How does Jenkins manage its job configurations and logs?<br>
+**Explanation:** 
+Job Configurations: Stored in XML files within the JENKINS_HOME directory, enabling job replication and backup.
+Logs: Jenkins keeps build logs and console outputs as plain text files within the respective job directories for traceability and debugging.
+<br>
+
+
+
+
+
+
