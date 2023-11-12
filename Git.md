@@ -122,4 +122,3 @@ Fetching in Git is like sending an owl to get the latest news from the Daily Pro
 **Explanation:** Git revert is similar to using the Time-Turner to undo a specific spell or event. In Git, when you want to undo a previous commit, you can use git revert to create a new commit that undoes the changes made in the previous commit. It's like going back in time to reverse a specific magical action without altering the entire timeline.
 **Answer:** To revert a commit that has already been pushed to a remote repository, you can use the git revert command. It creates a new commit that undoes the changes made by the original commit without removing it from the history.
 <br>
-
