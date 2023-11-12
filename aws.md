@@ -247,3 +247,63 @@ Role in Performance Monitoring: X-Ray provides insights into how an application 
 Secrets Manager: It's a service for managing sensitive information such as passwords, API keys, and other secrets.
 Security Role: It helps protect sensitive data by controlling access and enabling rotation of secrets for enhanced security.
 <br>
+
+**Question:** What type of autoscaling policies are there in AWS ?<br>
+**Answer:** 
+*Target Tracking*: Scales based on predefined metrics to maintain a target value.
+*Step Scaling*: Scales based on configured steps with different scaling adjustments.
+*Simple/Manual Scaling*: Allows fixed scaling actions manually.
+<br>
+
+**Question:** What is Warmup and Cool down period ?<br>
+**Answer:** 
+*Warm Up Time*: Duration for newly launched instances to stabilize before they receive full traffic.
+*Cool Down Period*: Time during which Auto Scaling waits before another scaling activity.
+<br>
+
+**Question:** What are components of IAM ?<br>
+**Answer:** 
+Users: Individuals needing access to AWS.
+Groups: Collections of users with the same permissions.
+Roles: Define a set of permissions for making AWS service requests.
+Policies: Define permissions and attach them to users, groups, or roles.
+<br>
+
+**Question:** What if I have lost the Pem file for ubuntu user of an ec2-instance ?<br>
+**Answer:**
+It's advisable to create a new key pair and associate it with the instance. Otherwise, if an EBS-backed instance, stopping it, detaching the root volume, attaching it to another instance, modifying the authorized_keys file, then reattaching it to the original instance might help recover access.
+<br>
+
+**Question:** What is VPC Peering ?<br>
+**Answer:** Connects VPCs via a direct network route using private IP addresses, allowing instances to communicate.
+<br>
+
+**Question:** What is Transit VPC ?<br>
+**Answer:** A method to interconnect multiple VPCs, enabling connectivity between them.
+<br>
+
+**Question:** What is a VPC analyzer ?<br>
+**Answer:** A tool for monitoring and identifying risks and threats in VPC flow logs.
+<br>
+
+**Question:** What is AWS Private Link ?<br>
+**Answer:** Allows secure connectivity between VPCs and supported AWS services without traversing the internet.
+<br>
+
+**Question:** What can you tell me about warm pool ?<br>
+**Answer:** A feature in EC2 Auto Scaling Groups that allows pre-provisioning instances to respond to sudden traffic spikes.
+<br>
+
+**Question:** How to recover an ec2-instance if it crashes ?<br>
+**Answer:** Depends on the type of instance and its stored data. For EBS-backed instances, the data persists on the EBS volume and can be attached to another instance. For instance store-backed instances, recovery would involve relaunching the instance, losing any non-persistent data.
+<br>
+
+**Question:** What's the difference between Restart and Start/Stop of an ec2-instance ?<br>
+**Answer:** 
+Restart: Quickly halts and restarts the instance.
+Start/Stop: Completely halts the instance, which persists even after a start command. The VM is launched on a different host machine.
+<br>
+
+**Question:** How to host static website in AWS ?<br>
+**Answer:** Host a static website on AWS using Amazon S3. Upload your files to an S3 bucket and enable static website hosting in the bucket properties.
+<br>
