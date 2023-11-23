@@ -113,8 +113,8 @@ Glacier: For long-term archival storage with retrieval times of minutes to hours
 
 #### Question: What is AWS IAM? Explain IAM Roles and Policies.
 **Answer:**
-IAM (Identity and Access Management): It's used to control access to AWS services and resources.
-IAM Roles: Define a set of permissions for making AWS service requests. They're used to grant specific permissions to entities that you trust.
+IAM (Identity and Access Management): It's used to control access to AWS services and resources.<br>
+IAM Roles: Define a set of permissions for making AWS service requests. They're used to grant specific permissions to entities that you trust.<br>
 IAM Policies: These are documents that define permissions. They specify what actions are allowed or denied and on what resources.
 
 
@@ -136,7 +136,7 @@ AWS CloudFormation: It's a service that helps model and set up your AWS resource
 
 #### Question: Explain the difference between AWS ECS and AWS EKS.
 **Answer:**
-ECS (Elastic Container Service): It's a container management service for Docker containers, offering simplicity and native integration with other AWS services.
+ECS (Elastic Container Service): It's a container management service for Docker containers, offering simplicity and native integration with other AWS services.<br>
 EKS (Elastic Kubernetes Service): It's a managed Kubernetes service offering open-source flexibility and scalability with less AWS-specific functionality.
 
 
@@ -168,20 +168,30 @@ CloudWatch: It's a monitoring and observability service in AWS used for collecti
 
 #### Question: Explain the differences between AWS RDS and DynamoDB.
 **Answer:**
-RDS: It's a relational database service supporting SQL-type databases like MySQL, PostgreSQL, SQL Server, etc.
+RDS: It's a relational database service supporting SQL-type databases like MySQL, PostgreSQL, SQL Server, etc.<br>
 DynamoDB: It's a NoSQL database service designed for fast and predictable performance with seamless scalability.
 
 
 #### Question: What is AWS SNS and how is it different from SQS?
 **Answer:**
-SNS (Simple Notification Service): It's a publish-subscribe service allowing message broadcasting to various recipients.
+SNS (Simple Notification Service): It's a publish-subscribe service allowing message broadcasting to various recipients.<br>
 SQS (Simple Queue Service): It's a message queue service for decoupling services and handling asynchronous communication between distributed systems.
 
 
 #### Question: What is the AWS Well-Architected Framework and its importance?
 **Answer:**
-Well-Architected Framework: It's a set of best practices for building secure, high-performing, resilient, and efficient infrastructure.
+Well-Architected Framework: The AWS Well-Architected Framework is a set of best practices and guidelines designed to help cloud architects build secure, high-performing, resilient, and efficient infrastructure for their applications. Developed by Amazon Web Services (AWS), the Well-Architected Framework provides a consistent approach for customers and partners to evaluate their architectures and implement designs that will scale over time.
 Importance: Following these best practices ensures that AWS environments are well-structured and aligned with industry standards.
+Operational Excellence: Focuses on operational aspects, such as incident response, monitoring, and automation.
+Aims to deliver business value by continually improving processes and procedures.
+Security: Emphasizes the implementation of robust security measures to protect data, systems, and assets.<br>
+Includes identity and access management, data protection, and incident response.
+Reliability: Ensures that a system can recover from failures and meet customer expectations during normal and peak operation.<br>
+Addresses areas like fault tolerance, disaster recovery, and scaling.
+Performance Efficiency: Focuses on optimizing the use of computing resources to meet system requirements and to maintain efficiency.<br>
+Covers areas like selecting the right types and sizes of resources and monitoring performance.
+Cost Optimization: Aims to avoid unnecessary costs and optimize spending by understanding and controlling where the money is going.<br>
+Includes strategies for monitoring usage, optimizing resource allocation, and managing costs over time.
 
 
 #### Question: Explain the concept of AWS Lambda Triggers.

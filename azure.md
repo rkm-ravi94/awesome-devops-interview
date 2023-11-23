@@ -1,134 +1,134 @@
 #### Question: What is the Azure Resource Manager (ARM) and how does it differ from classic deployment?
-**Answer:** Azure Resource Manager (ARM) is the deployment and management service provided by Microsoft Azure for organizing and managing resources within a cloud environment. It allows you to deploy and manage resources in a declarative manner using JSON templates. ARM provides a consistent management layer that enables you to create, update, and delete resources in your Azure subscription.
-In contrast, classic deployment, also known as the Azure Service Management (ASM) model, is the older deployment model for Azure resources. It involves using Azure Service Management API calls to create and manage resources. The key difference lies in the approach to resource management—ARM uses a declarative template-based approach, while classic deployment is imperative and involves individual resource configurations.
+**Answer:** Azure Resource Manager (ARM) is the deployment and management service provided by Microsoft Azure for organizing and managing resources within a cloud environment. It allows you to deploy and manage resources in a declarative manner using JSON templates. ARM provides a consistent management layer that enables you to create, update, and delete resources in your Azure subscription.<br>
+In contrast, classic deployment, also known as the Azure Service Management (ASM) model, is the older deployment model for Azure resources. It involves using Azure Service Management API calls to create and manage resources. The key difference lies in the approach to resource management—ARM uses a declarative template-based approach, while classic deployment is imperative and involves individual resource configurations.<br>
 ARM provides several advantages, including the ability to deploy resources in a more modular and scalable way, template reuse, and improved resource dependency management.
 
 
 #### Question: Explain the concept of Azure Resource Groups.
-**Answer:** Azure Resource Groups are logical containers that hold related resources for an Azure solution. These resources can include virtual machines, storage accounts, virtual networks, and more. The main purpose of resource groups is to manage and organize resources, making it easier to deploy, monitor, and maintain solutions.
-Key characteristics of Azure Resource Groups include:
-Scope and Lifespan: Resource groups are confined to a single Azure subscription and can contain resources from different regions. They are also designed to be temporary and can be created, modified, or deleted as a unit.
-Role-Based Access Control (RBAC): RBAC can be applied at the resource group level, allowing administrators to control access to all resources within the group.
-Tagging: Resource groups support tagging, enabling the categorization and organization of resources based on metadata.
-Delegation: Resource groups can be delegated to different teams or individuals, allowing for efficient management of resources in a multi-team environment.
+**Answer:** Azure Resource Groups are logical containers that hold related resources for an Azure solution. These resources can include virtual machines, storage accounts, virtual networks, and more. The main purpose of resource groups is to manage and organize resources, making it easier to deploy, monitor, and maintain solutions.<br>
+**Key characteristics of Azure Resource Groups include:**
+* Scope and Lifespan: Resource groups are confined to a single Azure subscription and can contain resources from different regions. They are also designed to be temporary and can be created, modified, or deleted as a unit.
+* Role-Based Access Control (RBAC): RBAC can be applied at the resource group level, allowing administrators to control access to all resources within the group.
+* Tagging: Resource groups support tagging, enabling the categorization and organization of resources based on metadata.
+* Delegation: Resource groups can be delegated to different teams or individuals, allowing for efficient management of resources in a multi-team environment.
 
 
 #### Question: Differentiate between Azure Virtual Network and Azure VPN Gateway.
 **Answer:**
 **Azure Virtual Network (VNet):**
-Definition: Azure Virtual Network is a network service that enables the creation of private, isolated, and securely connected networks in Azure.
-Purpose: VNets allow the deployment of Azure resources, such as virtual machines, into a logically isolated network to ensure secure communication and control over IP addressing.
+Definition: Azure Virtual Network is a network service that enables the creation of private, isolated, and securely connected networks in Azure.<br>
+Purpose: VNets allow the deployment of Azure resources, such as virtual machines, into a logically isolated network to ensure secure communication and control over IP addressing.<br>
 **Azure VPN Gateway:**
-Definition: Azure VPN Gateway is a specific type of virtual network gateway that facilitates secure communication between on-premises networks and Azure VNets.
-Purpose: The VPN Gateway provides a secure connection, using VPN protocols (like IPsec), between on-premises networks and Azure VNets. It enables the extension of on-premises networks into the Azure cloud.
+Definition: Azure VPN Gateway is a specific type of virtual network gateway that facilitates secure communication between on-premises networks and Azure VNets.<br>
+Purpose: The VPN Gateway provides a secure connection, using VPN protocols (like IPsec), between on-premises networks and Azure VNets. It enables the extension of on-premises networks into the Azure cloud.<br>
 **Key Differences:**
-Scope: Azure VNet is the virtual network itself, while Azure VPN Gateway is a service that facilitates secure communication between on-premises and Azure networks.
-Functionality: VNet is the network infrastructure, and VPN Gateway is a component that provides connectivity options (point-to-site, site-to-site, etc.).
-Deployment: VNets are where resources are deployed, while VPN Gateway is a separate resource that connects VNets or on-premises networks.
+* Scope: Azure VNet is the virtual network itself, while Azure VPN Gateway is a service that facilitates secure communication between on-premises and Azure networks.
+* Functionality: VNet is the network infrastructure, and VPN Gateway is a component that provides connectivity options (point-to-site, site-to-site, etc.).
+* Deployment: VNets are where resources are deployed, while VPN Gateway is a separate resource that connects VNets or on-premises networks.
 
 
 #### Question: How does Azure Active Directory differ from on-premises Active Directory?
 **Answer:**
 **Azure Active Directory (AAD):**
-Cloud-Based: Azure AD is a cloud-based identity and access management service provided by Microsoft Azure.
-Identity as a Service: It serves as a centralized identity platform for managing and authenticating users for Azure services and other integrated applications.
+Cloud-Based: Azure AD is a cloud-based identity and access management service provided by Microsoft Azure.<br>
+Identity as a Service: It serves as a centralized identity platform for managing and authenticating users for Azure services and other integrated applications.<br>
 **On-Premises Active Directory:**
-Server-Based: On-premises Active Directory is the traditional, server-based directory service used in Windows Server environments.
-Primarily On-Premises: It is typically deployed within an organization's data center and is responsible for managing user identities and permissions within the local network.
+Server-Based: On-premises Active Directory is the traditional, server-based directory service used in Windows Server environments.<br>
+Primarily On-Premises: It is typically deployed within an organization's data center and is responsible for managing user identities and permissions within the local network.<br>
 **Key Differences:**
-Location: Azure AD is cloud-based, while on-premises AD is located on servers within an organization's physical or virtual infrastructure.
-Scope: Azure AD is designed for cloud-centric identity management, while on-premises AD traditionally manages identities within the corporate network.
-Authentication: Azure AD supports modern authentication methods, including OAuth and OpenID Connect, while on-premises AD primarily uses Kerberos and NTLM.
+* Location: Azure AD is cloud-based, while on-premises AD is located on servers within an organization's physical or virtual infrastructure.
+* Scope: Azure AD is designed for cloud-centric identity management, while on-premises AD traditionally manages identities within the corporate network.
+* Authentication: Azure AD supports modern authentication methods, including OAuth and OpenID Connect, while on-premises AD primarily uses Kerberos and NTLM.
 
 
 #### Question: What is Azure Traffic Manager, and how does it work?
 **Answer:**
 **Azure Traffic Manager:**
-Definition: Azure Traffic Manager is a DNS-based traffic load balancer that enables the distribution of user traffic across multiple Azure services or global data centers.
-Purpose: It enhances application availability, responsiveness, and resiliency by directing user requests to the most suitable endpoint based on routing methods and health probes.
+Definition: Azure Traffic Manager is a DNS-based traffic load balancer that enables the distribution of user traffic across multiple Azure services or global data centers.<br>
+Purpose: It enhances application availability, responsiveness, and resiliency by directing user requests to the most suitable endpoint based on routing methods and health probes.<br>
 **How it Works:**
-DNS Resolution: When a user makes a request, Traffic Manager responds with the DNS record of the appropriate endpoint based on the configured routing method.
-Routing Methods: Traffic Manager supports various routing methods, including priority, weighted, performance, geographic, and multi-value.
-Health Probes: Traffic Manager periodically checks the health of the endpoints using health probes to ensure that user traffic is directed to healthy instances.
-Global Distribution: It enables the distribution of traffic across multiple Azure regions, promoting high availability and global load balancing.
+* DNS Resolution: When a user makes a request, Traffic Manager responds with the DNS record of the appropriate endpoint based on the configured routing method.
+* Routing Methods: Traffic Manager supports various routing methods, including priority, weighted, performance, geographic, and multi-value.
+* Health Probes: Traffic Manager periodically checks the health of the endpoints using health probes to ensure that user traffic is directed to healthy instances.
+* Global Distribution: It enables the distribution of traffic across multiple Azure regions, promoting high availability and global load balancing.
 
 
 #### Question: Explain the purpose of Azure Availability Zones.
 **Answer:** 
 **Azure Availability Zones:**
-Definition: Azure Availability Zones are physically separate data centers within an Azure region, each having its own power, cooling, and networking.
-Purpose: The primary purpose of Availability Zones is to provide high availability and resiliency for applications and services by distributing them across multiple isolated locations within a region.
+Definition: Azure Availability Zones are physically separate data centers within an Azure region, each having its own power, cooling, and networking.<br>
+Purpose: The primary purpose of Availability Zones is to provide high availability and resiliency for applications and services by distributing them across multiple isolated locations within a region.<br>
 **Key Points:**
-Fault Isolation: Each Availability Zone is designed to be an independent failure zone, ensuring that a failure in one zone does not impact the availability of resources in other zones.
-Redundancy: Applications can be deployed across multiple Availability Zones to achieve redundancy, and Azure services within a region are designed to replicate data and services across these zones.
-High Availability: Availability Zones enhance the availability of applications by providing a distributed infrastructure that mitigates the impact of hardware failures, maintenance, or unexpected outages.
+* Fault Isolation: Each Availability Zone is designed to be an independent failure zone, ensuring that a failure in one zone does not impact the availability of resources in other zones.
+* Redundancy: Applications can be deployed across multiple Availability Zones to achieve redundancy, and Azure services within a region are designed to replicate data and services across these zones.
+* High Availability: Availability Zones enhance the availability of applications by providing a distributed infrastructure that mitigates the impact of hardware failures, maintenance, or unexpected outages.
 
 
 #### Question: Describe the difference between Azure Load Balancer and Application Gateway.
-**Answer:** Azure Load Balancer and Application Gateway are both networking services in Azure, but they serve different purposes.
+**Answer:** Azure Load Balancer and Application Gateway are both networking services in Azure, but they serve different purposes.<br>
 **Azure Load Balancer:**
-Purpose: Azure Load Balancer distributes network traffic across multiple servers to ensure that no single server is overwhelmed with too much traffic.
-Layer: Operates at the Transport Layer (Layer 4) of the OSI model.
-Use Cases: Ideal for load balancing traffic to applications that can handle the same type of traffic on all instances.
+Purpose: Azure Load Balancer distributes network traffic across multiple servers to ensure that no single server is overwhelmed with too much traffic.<br>
+Layer: Operates at the Transport Layer (Layer 4) of the OSI model.<br>
+Use Cases: Ideal for load balancing traffic to applications that can handle the same type of traffic on all instances.<br>
 **Application Gateway:**
-Purpose: Application Gateway is designed for application-level (HTTP/HTTPS) traffic routing, SSL termination, and load balancing.
-Layer: Operates at the Application Layer (Layer 7) of the OSI model.
-Use Cases: Suitable for applications that require features such as cookie-based session affinity, URL-based routing, and SSL offloading.
-Key Differences:
-Azure Load Balancer is more generic and handles TCP/UDP traffic, while Application Gateway is tailored for web applications.
-Application Gateway provides more advanced features for web application scenarios, such as SSL termination and content-based routing.
+Purpose: Application Gateway is designed for application-level (HTTP/HTTPS) traffic routing, SSL termination, and load balancing.<br>
+Layer: Operates at the Application Layer (Layer 7) of the OSI model.<br>
+Use Cases: Suitable for applications that require features such as cookie-based session affinity, URL-based routing, and SSL offloading.<br>
+**Key Differences:**
+* Azure Load Balancer is more generic and handles TCP/UDP traffic, while Application Gateway is tailored for web applications.
+* Application Gateway provides more advanced features for web application scenarios, such as SSL termination and content-based routing.
 
 
 #### Question: How do you secure data in transit in Azure?
-**Answer:** Securing data in transit in Azure involves using encryption and secure communication protocols.
+**Answer:** Securing data in transit in Azure involves using encryption and secure communication protocols.<br>
 **SSL/TLS Encryption:**
-All communication to and from Azure services should use HTTPS (SSL/TLS) to encrypt data in transit.
+All communication to and from Azure services should use HTTPS (SSL/TLS) to encrypt data in transit.<br>
 **Azure VPN Gateway:**
-For site-to-site or point-to-site connections, Azure VPN Gateway uses IPsec to secure data transmitted over the network.
+For site-to-site or point-to-site connections, Azure VPN Gateway uses IPsec to secure data transmitted over the network.<br>
 **Azure ExpressRoute:**
 ExpressRoute provides a private, dedicated connection between on-premises networks and Azure, ensuring data in transit is not exposed to the public internet.
-Azure Application Gateway and Load Balancer:
-Both support SSL termination, allowing them to decrypt traffic at the gateway and re-encrypt it before forwarding.
+**Azure Application Gateway and Load Balancer:**
+Both support SSL termination, allowing them to decrypt traffic at the gateway and re-encrypt it before forwarding.<br>
 **Azure Storage Encryption:**
 Azure Storage services offer encryption options, including encryption in transit using HTTPS for data transferred between the client and the service. 
 
 
 #### Question: Explain Azure ExpressRoute and its use cases.
-**Answer:** Azure ExpressRoute is a dedicated, private connection between on-premises data centers and Azure, providing a more reliable and predictable connection than internet-based connections.
-Use Cases:
-Hybrid Cloud: Connect on-premises infrastructure to Azure, creating a hybrid cloud environment.
-Performance: Ensure low-latency and high-throughput connectivity for mission-critical applications.
-Data Privacy: Address data residency and compliance requirements by keeping data within a specific geographic location.
-Security: Enable a private connection that does not traverse the public internet, enhancing security.
-Connection Models:
-Private Peering: Connects to Azure services over a private, non-internet-routed connection.
+**Answer:** Azure ExpressRoute is a dedicated, private connection between on-premises data centers and Azure, providing a more reliable and predictable connection than internet-based connections.<br>
+**Use Cases:**
+* Hybrid Cloud: Connect on-premises infrastructure to Azure, creating a hybrid cloud environment.
+* Performance: Ensure low-latency and high-throughput connectivity for mission-critical applications.
+* Data Privacy: Address data residency and compliance requirements by keeping data within a specific geographic location.
+* Security: Enable a private connection that does not traverse the public internet, enhancing security.<br>
+**Connection Models:**
+Private Peering: Connects to Azure services over a private, non-internet-routed connection.<br>
 Microsoft Peering: Connects to Microsoft services, such as Azure PaaS services, over the ExpressRoute connection.
 
 
 #### Question: What is Network Security Group (NSG) in Azure and how does it work?
 **Answer:** Azure Network Security Group (NSG) is a fundamental element of network security in Azure, allowing or denying inbound and outbound traffic to network interfaces, VMs, and subnets.
 **How it Works:**
-Rule-Based: NSGs operate based on rules that define allowed or denied traffic based on source, destination, protocol, and port.
-Associations: NSGs can be associated with subnets or individual network interfaces, providing granular control.
-Default Rules: By default, NSGs deny all inbound and outbound traffic, requiring explicit rule definition.
+Rule-Based: NSGs operate based on rules that define allowed or denied traffic based on source, destination, protocol, and port.<br>
+Associations: NSGs can be associated with subnets or individual network interfaces, providing granular control.<br>
+Default Rules: By default, NSGs deny all inbound and outbound traffic, requiring explicit rule definition.<br>
 **Use Cases:**
-Access Control: Enforce network-level access control policies.
-Micro-Segmentation: Implement micro-segmentation by applying NSGs to individual subnets.
-Security Groups: Group multiple NSGs together to simplify management.
+* Access Control: Enforce network-level access control policies.
+* Micro-Segmentation: Implement micro-segmentation by applying NSGs to individual subnets.
+* Security Groups: Group multiple NSGs together to simplify management.
 
 
 #### Question: How do you implement DDoS protection in Azure?
 **Answer:**
 **Azure DDoS Protection:**
-Service: Azure DDoS Protection is a service that safeguards Azure applications from Distributed Denial of Service (DDoS) attacks.
-Automatic: Basic DDoS Protection is automatically applied to all Azure services at no additional cost.
+Service: Azure DDoS Protection is a service that safeguards Azure applications from Distributed Denial of Service (DDoS) attacks.<br>
+Automatic: Basic DDoS Protection is automatically applied to all Azure services at no additional cost.<br>
 **Azure DDoS Protection Standard:**
-Enhanced Protection: Offers additional DDoS mitigation capabilities and features for more advanced scenarios.
-Customization: Allows fine-tuning of DDoS protection policies based on specific application requirements.
+Enhanced Protection: Offers additional DDoS mitigation capabilities and features for more advanced scenarios.<br>
+Customization: Allows fine-tuning of DDoS protection policies based on specific application requirements.<br>
 **Key Features:**
-Traffic Monitoring: Continuous monitoring of network traffic to detect and mitigate DDoS attacks.
-Real-Time Mitigation: Rapid response to detected attacks to minimize service disruption.
-Application Layer Protection: Protects against both volumetric and application layer attacks.
+* Traffic Monitoring: Continuous monitoring of network traffic to detect and mitigate DDoS attacks.
+* Real-Time Mitigation: Rapid response to detected attacks to minimize service disruption.
+* Application Layer Protection: Protects against both volumetric and application layer attacks.
 
 
 #### Question: Discuss the differences between Azure DNS and Azure Traffic Manager.
