@@ -998,18 +998,18 @@ Plugins and Modules: Verify the compatibility of third-party plugins and modules
 
 #### Question:  Discuss SaltStack's approach to handling secrets and sensitive data securely.
 **Answer:** 
-Pillar Data Encryption: SaltStack provides Pillar encryption to secure sensitive data such as passwords, API keys, or certificates. Encryption keys are managed securely, and sensitive data is decrypted only on the minion at runtime.
-Master-Minion Communication: SaltStack uses secure communication protocols, including TLS, to encrypt data transmitted between the Salt Master and minions. This helps protect sensitive information during remote execution and configuration management tasks.
-Key Management: SaltStack includes a robust key management system for secure authentication between the Salt Master and minions. This system ensures that only authorized minions can communicate with the master.
-Salt SDB (Salt Database): Salt SDB allows for external databases to be used as backends for storing Pillar data securely. Integration with key management systems or encrypted databases adds an extra layer of security.
-Third-Party Secrets Management Integration: SaltStack can integrate with third-party secrets management tools such as HashiCorp Vault. This allows organizations to leverage dedicated secrets management solutions while benefiting from SaltStack's automation capabilities.
-Pillar ACLs (Access Control Lists): Access to sensitive data in Pillar is controlled through Access Control Lists (ACLs). Administrators can define fine-grained access policies to restrict who can view or modify specific pieces of sensitive information.
-Grains Filtering: Grains can be used to selectively apply configurations based on minion attributes. By filtering based on grains, administrators can target specific minions for the application of sensitive configurations.
-Encrypted Custom Modules: Custom modules can be created to handle sensitive data securely. These modules can use encryption or integration with external key management systems to protect sensitive information.
-State Execution Module: The state execution module allows administrators to execute Salt States that involve sensitive data securely. The data is encrypted during transmission and decrypted only on the targeted minions.
-Real-Time Event Handling: SaltStack's event-driven architecture enables real-time handling of events, including those related to sensitive data changes. This allows for immediate responses or alerts to potential security incidents.
-Secure File Distribution: When distributing files using SaltStack, administrators can ensure the secure transmission of sensitive files by leveraging encryption and secure external file servers.
-Security Best Practices: Following security best practices, such as regularly rotating encryption keys, minimizing exposure of sensitive data, and conducting security audits, contributes to a robust security posture.
+* Pillar Data Encryption: SaltStack provides Pillar encryption to secure sensitive data such as passwords, API keys, or certificates. Encryption keys are managed securely, and sensitive data is decrypted only on the minion at runtime.
+* Master-Minion Communication: SaltStack uses secure communication protocols, including TLS, to encrypt data transmitted between the Salt Master and minions. This helps protect sensitive information during remote execution and configuration management tasks.
+* Key Management: SaltStack includes a robust key management system for secure authentication between the Salt Master and minions. This system ensures that only authorized minions can communicate with the master.
+* Salt SDB (Salt Database): Salt SDB allows for external databases to be used as backends for storing Pillar data securely. Integration with key management systems or encrypted databases adds an extra layer of security.
+* Third-Party Secrets Management Integration: SaltStack can integrate with third-party secrets management tools such as HashiCorp Vault. This allows organizations to leverage dedicated secrets management solutions while benefiting from SaltStack's automation capabilities.
+* Pillar ACLs (Access Control Lists): Access to sensitive data in Pillar is controlled through Access Control Lists (ACLs). Administrators can define fine-grained access policies to restrict who can view or modify specific pieces of sensitive information.
+* Grains Filtering: Grains can be used to selectively apply configurations based on minion attributes. By filtering based on grains, administrators can target specific minions for the application of sensitive configurations.
+* Encrypted Custom Modules: Custom modules can be created to handle sensitive data securely. These modules can use encryption or integration with external key management systems to protect sensitive information.
+* State Execution Module: The state execution module allows administrators to execute Salt States that involve sensitive data securely. The data is encrypted during transmission and decrypted only on the targeted minions.
+* Real-Time Event Handling: SaltStack's event-driven architecture enables real-time handling of events, including those related to sensitive data changes. This allows for immediate responses or alerts to potential security incidents.
+* Secure File Distribution: When distributing files using SaltStack, administrators can ensure the secure transmission of sensitive files by leveraging encryption and secure external file servers.
+* Security Best Practices: Following security best practices, such as regularly rotating encryption keys, minimizing exposure of sensitive data, and conducting security audits, contributes to a robust security posture.
 
 #### Question:  How can you implement SaltStack code testing and linting in a development workflow?
 **Answer:** 
