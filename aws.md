@@ -106,59 +106,58 @@ Auto Scaling Groups: They automatically adjust the number of instances in respon
 
 #### Question: Explain the different storage classes in Amazon S3 and their use cases.
 **Answer:**
-Standard: General-purpose storage for frequently accessed data.
-Infrequent Access (IA): For less frequently accessed data but requires rapid access when needed.
-Glacier: For long-term archival storage with retrieval times of minutes to hours.
+* Standard: General-purpose storage for frequently accessed data.
+* Infrequent Access (IA): For less frequently accessed data but requires rapid access when needed.
+* Glacier: For long-term archival storage with retrieval times of minutes to hours.
 
 
 #### Question: What is AWS IAM? Explain IAM Roles and Policies.
 **Answer:**
-IAM (Identity and Access Management): It's used to control access to AWS services and resources.<br>
-IAM Roles: Define a set of permissions for making AWS service requests. They're used to grant specific permissions to entities that you trust.<br>
-IAM Policies: These are documents that define permissions. They specify what actions are allowed or denied and on what resources.
+* IAM (Identity and Access Management): It's used to control access to AWS services and resources.<br>
+* IAM Roles: Define a set of permissions for making AWS service requests. They're used to grant specific permissions to entities that you trust.<br>
+* IAM Policies: These are documents that define permissions. They specify what actions are allowed or denied and on what resources.
 
 
 #### Question: Describe AWS RDS and its benefits.
 **Answer:**
-Amazon RDS (Relational Database Service): It's a managed database service that makes it easy to set up, operate, and scale a relational database in the cloud. It supports various engines like MySQL, PostgreSQL, Oracle, and SQL Server.
-Benefits: Automated backups, scaling, patches, and high availability are some advantages of RDS.
+* Amazon RDS (Relational Database Service): It's a managed database service that makes it easy to set up, operate, and scale a relational database in the cloud. It supports various engines like MySQL, PostgreSQL, Oracle, and SQL Server.
+* Benefits: Automated backups, scaling, patches, and high availability are some advantages of RDS.
 
 
 #### Question: Explain the concept of VPC (Virtual Private Cloud) in AWS.
-**Answer:**
-VPC: Imagine a VPC as your own virtual space in the cloud. It's like your personal office building in a city full of skyscrapers. Your VPC is where you control your network, your own space with its own address and security. You decide who can come in, what rooms they can access, and how they move around. It's a virtual network dedicated to your AWS account. It allows you to select your IP address range, create subnets, and configure route tables and network gateways. VPC provides isolation and control over your network environment.
+**Answer:**<br>
+**VPC:** Imagine a VPC as your own virtual space in the cloud. It's like your personal office building in a city full of skyscrapers. Your VPC is where you control your network, your own space with its own address and security. You decide who can come in, what rooms they can access, and how they move around. It's a virtual network dedicated to your AWS account. It allows you to select your IP address range, create subnets, and configure route tables and network gateways. VPC provides isolation and control over your network environment.
 
 
 #### Question: What is CloudFormation in AWS?
-**Answer:**
+**Answer:** <br>
 AWS CloudFormation: It's a service that helps model and set up your AWS resources using templates. It allows you to describe and provision all the infrastructure resources in your cloud environment.
 
 
 #### Question: Explain the difference between AWS ECS and AWS EKS.
 **Answer:**
-ECS (Elastic Container Service): It's a container management service for Docker containers, offering simplicity and native integration with other AWS services.<br>
-EKS (Elastic Kubernetes Service): It's a managed Kubernetes service offering open-source flexibility and scalability with less AWS-specific functionality.
+* ECS (Elastic Container Service): It's a container management service for Docker containers, offering simplicity and native integration with other AWS services.<br>
+* EKS (Elastic Kubernetes Service): It's a managed Kubernetes service offering open-source flexibility and scalability with less AWS-specific functionality.
 
 
 #### Question: What is AWS Lambda Layers?
-**Answer:**
+**Answer:**<br>
 Lambda Layers: These allow you to centrally manage common code and data shared across multiple Lambda functions. Layers are useful for shared libraries, custom runtimes, and dependencies.
 
 
 #### Question: How does AWS KMS (Key Management Service) work?
-**Answer:**
+**Answer:**<br>
 AWS KMS: It's a service for managing cryptographic keys. It uses Hardware Security Modules (HSM) to protect your keys and offers secure key creation, storage, and management.
 
 
 #### Question: Explain AWS Redshift and its use cases.
-**Answer:**
+**Answer:**<br>
 AWS Redshift: It's a fully managed, petabyte-scale data warehouse service. It's optimized for querying large datasets and is suitable for analytics, reporting, and business intelligence.
 
 
 #### Question: Describe AWS Direct Connect and its benefits.
-**Answer:**
+**Answer:**<br>
 AWS Direct Connect: It's a dedicated network connection from on-premises networks to AWS. It's used to reduce network costs, increase bandwidth throughput, and provide a consistent network experience.
-These questions and answers span various AWS services, focusing on understanding, features, and use cases, catering to different experience levels within AWS.
 
 
 #### Question: What is CloudWatch in AWS and how is it utilized?
@@ -168,21 +167,21 @@ CloudWatch: It's a monitoring and observability service in AWS used for collecti
 
 #### Question: Explain the differences between AWS RDS and DynamoDB.
 **Answer:**
-RDS: It's a relational database service supporting SQL-type databases like MySQL, PostgreSQL, SQL Server, etc.<br>
-DynamoDB: It's a NoSQL database service designed for fast and predictable performance with seamless scalability.
+* RDS: It's a relational database service supporting SQL-type databases like MySQL, PostgreSQL, SQL Server, etc.<br>
+* DynamoDB: It's a NoSQL database service designed for fast and predictable performance with seamless scalability.
 
 
 #### Question: What is AWS SNS and how is it different from SQS?
 **Answer:**
-SNS (Simple Notification Service): It's a publish-subscribe service allowing message broadcasting to various recipients.<br>
-SQS (Simple Queue Service): It's a message queue service for decoupling services and handling asynchronous communication between distributed systems.
+* SNS (Simple Notification Service): It's a publish-subscribe service allowing message broadcasting to various recipients.<br>
+* SQS (Simple Queue Service): It's a message queue service for decoupling services and handling asynchronous communication between distributed systems.
 
 
 #### Question: What is the AWS Well-Architected Framework and its importance?
 **Answer:**
-Well-Architected Framework: The AWS Well-Architected Framework is a set of best practices and guidelines designed to help cloud architects build secure, high-performing, resilient, and efficient infrastructure for their applications. Developed by Amazon Web Services (AWS), the Well-Architected Framework provides a consistent approach for customers and partners to evaluate their architectures and implement designs that will scale over time.
+Well-Architected Framework: The AWS Well-Architected Framework is a set of best practices and guidelines designed to help cloud architects build secure, high-performing, resilient, and efficient infrastructure for their applications. Developed by Amazon Web Services (AWS), the Well-Architected Framework provides a consistent approach for customers and partners to evaluate their architectures and implement designs that will scale over time.<br>
 Importance: Following these best practices ensures that AWS environments are well-structured and aligned with industry standards.
-Operational Excellence: Focuses on operational aspects, such as incident response, monitoring, and automation.
+Operational Excellence: Focuses on operational aspects, such as incident response, monitoring, and automation.<br>
 Aims to deliver business value by continually improving processes and procedures.
 Security: Emphasizes the implementation of robust security measures to protect data, systems, and assets.<br>
 Includes identity and access management, data protection, and incident response.
@@ -195,92 +194,92 @@ Includes strategies for monitoring usage, optimizing resource allocation, and ma
 
 
 #### Question: Explain the concept of AWS Lambda Triggers.
-**Answer:**
+**Answer:**<br>
 Lambda Triggers: They're events that invoke Lambda functions automatically when a particular event occurs in other AWS services. For instance, S3 upload triggers a Lambda function.
 
 
 #### Question: Describe AWS Route 53 and its key features.
-**Answer:**
-Route 53: It's a scalable domain name system (DNS) web service providing domain registration and routing internet traffic to resources.
+**Answer:**<br>
+Route 53: It's a scalable domain name system (DNS) web service providing domain registration and routing internet traffic to resources.<br>
 Key Features: Health checks, traffic flow, domain registration, and global data propagation are significant functionalities.
 
 
 #### Question: What are the benefits of using AWS EFS (Elastic File System)?
-**Answer:**
+**Answer:**<br>
 EFS: It's a file storage service providing scalable storage for use with Amazon EC2 instances. Benefits include high availability, durability, and compatibility with multiple EC2 instances.
 
 
 #### Question: Explain AWS CloudTrail and its role in AWS security.
-**Answer:**
-CloudTrail: It's a service for logging and monitoring AWS API calls for auditing and security analysis.
+**Answer:**<br>
+CloudTrail: It's a service for logging and monitoring AWS API calls for auditing and security analysis.<br>
 Role in Security: CloudTrail provides a record of actions taken by a user, role, or an AWS service for security and compliance needs.
 
 
 #### Question: What is the AWS Storage Gateway and its use cases?
-**Answer:**
-Storage Gateway: It's a service connecting an on-premises software appliance with cloud-based storage to provide seamless integration.
+**Answer:**<br>
+Storage Gateway: It's a service connecting an on-premises software appliance with cloud-based storage to provide seamless integration.<br>
 Use Cases: Backup, disaster recovery, and hybrid cloud storage are common scenarios.
 
 
 #### Question: Explain the benefits of using AWS Elastic Beanstalk.
-**Answer:**
-Elastic Beanstalk: It's a service that simplifies deployment and management of applications in the AWS cloud.
+**Answer:**<br>
+Elastic Beanstalk: It's a service that simplifies deployment and management of applications in the AWS cloud.<br>
 Benefits: It streamlines infrastructure management, eases deployment, and allows developers to focus on coding.
 
 
 #### Question: How does AWS CloudFront work and what are its features?
-**Answer:**
-CloudFront: It's a content delivery network (CDN) service, distributing content globally with low latency and high data transfer speeds.
+**Answer:**<br>
+CloudFront: It's a content delivery network (CDN) service, distributing content globally with low latency and high data transfer speeds.<br>
 Features: Edge locations, caching, and origin fetch optimization are key functionalities.
 
 
 #### Question: Describe AWS Data Pipeline and its functionalities.
-**Answer:**
-Data Pipeline: It's a web service for processing and moving data between different AWS services and on-premises data sources.
+**Answer:**<br>
+Data Pipeline: It's a web service for processing and moving data between different AWS services and on-premises data sources.<br>
 Functionalities: ETL (Extract, Transform, Load), scheduling, and data transformation are significant capabilities.
 
 
 #### Question: What is AWS OpsWorks and its use cases in infrastructure management?
-**Answer:**
-OpsWorks: It's a configuration management service that provides managed instances of Chef and Puppet for infrastructure management.
+**Answer:**<br>
+OpsWorks: It's a configuration management service that provides managed instances of Chef and Puppet for infrastructure management.<br>
 Use Cases: Application and infrastructure management, automation, and security patching are primary scenarios.
 
 
 #### Question: How does AWS X-Ray assist in application performance monitoring?
-**Answer:**
-AWS X-Ray: It's a service that helps developers analyze and debug production, distributed applications.
+**Answer:**<br>
+AWS X-Ray: It's a service that helps developers analyze and debug production, distributed applications.<br>
 Role in Performance Monitoring: X-Ray provides insights into how an application is performing and where issues might occur in a distributed environment.
 
 
 #### Question: Explain the AWS Secrets Manager and its role in security.
-**Answer:**
-Secrets Manager: It's a service for managing sensitive information such as passwords, API keys, and other secrets.
+**Answer:**<br>
+Secrets Manager: It's a service for managing sensitive information such as passwords, API keys, and other secrets.<br>
 Security Role: It helps protect sensitive data by controlling access and enabling rotation of secrets for enhanced security.
 
 
 #### Question: What type of autoscaling policies are there in AWS ?
 **Answer:** 
-*Target Tracking*: Scales based on predefined metrics to maintain a target value.
-*Step Scaling*: Scales based on configured steps with different scaling adjustments.
-*Simple/Manual Scaling*: Allows fixed scaling actions manually.
+* *Target Tracking*: Scales based on predefined metrics to maintain a target value.
+* *Step Scaling*: Scales based on configured steps with different scaling adjustments.
+* *Simple/Manual Scaling*: Allows fixed scaling actions manually.
 
 
 #### Question: What is Warmup and Cool down period ?
 **Answer:** 
-*Warm Up Time*: Duration for newly launched instances to stabilize before they receive full traffic.
-*Cool Down Period*: Time during which Auto Scaling waits before another scaling activity.
+* *Warm Up Time*: Duration for newly launched instances to stabilize before they receive full traffic.
+* *Cool Down Period*: Time during which Auto Scaling waits before another scaling activity.
 
 
 #### Question: What are components of IAM ?
 **Answer:** 
-Users: Individuals needing access to AWS.
-Groups: Collections of users with the same permissions.
-Roles: Define a set of permissions for making AWS service requests.
-Policies: Define permissions and attach them to users, groups, or roles.
+* Users: Individuals needing access to AWS.
+* Groups: Collections of users with the same permissions.
+* Roles: Define a set of permissions for making AWS service requests.
+* Policies: Define permissions and attach them to users, groups, or roles.
 
 
 #### Question: What if I have lost the Pem file for ubuntu user of an ec2-instance ?
-**Answer:**
+**Answer:**<br>
 It's advisable to create a new key pair and associate it with the instance. Otherwise, if an EBS-backed instance, stopping it, detaching the root volume, attaching it to another instance, modifying the authorized_keys file, then reattaching it to the original instance might help recover access.
 
 

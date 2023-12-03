@@ -291,11 +291,11 @@
 
 #### Question: How can you secure Jenkins against vulnerabilities and attacks?
 **Explanation:**: Secure Jenkins by:
-Regularly updating Jenkins and plugins.
-Enforcing strong password policies.
-Using HTTPS to encrypt communications.
-Implementing role-based access control.
-Employing security-focused plugins and monitoring tools.
+* Regularly updating Jenkins and plugins.
+* Enforcing strong password policies.
+* Using HTTPS to encrypt communications.
+* Implementing role-based access control.
+* Employing security-focused plugins and monitoring tools.
 
 
 #### Question: Can you name some commonly used Groovy methods/functions in Jenkins pipelines?
@@ -308,24 +308,24 @@ Employing security-focused plugins and monitoring tools.
 
 #### Question: Name any 10 Jenkins Plugins.
 **Answer:**
-Jenkins offers a vast array of plugins extending its functionality, enabling integrations, and enhancing capabilities. 
+Jenkins offers a vast array of plugins extending its functionality, enabling integrations, and enhancing capabilities. <br>
 Here are 10 examples:
-Pipeline: Facilitates defining jobs as code in Jenkinsfile.
-Git: Provides Git integration for source code management.
-Email Extension: Allows customizable email notifications.
-Artifactory: Enables integration with Artifactory for artifact management.
-GitHub: Provides integration with GitHub repositories.
-Docker: Offers Docker support for Jenkins jobs.
-AWS: Enables interaction with Amazon Web Services.
-Slack: Facilitates notifications and interaction with Slack.
-JUnit: Allows the parsing and displaying of JUnit test results.
-SonarQube: Facilitates integration with SonarQube for code quality analysis.
+* Pipeline: Facilitates defining jobs as code in Jenkinsfile.
+* Git: Provides Git integration for source code management.
+* Email Extension: Allows customizable email notifications.
+* Artifactory: Enables integration with Artifactory for artifact management.
+* GitHub: Provides integration with GitHub repositories.
+* Docker: Offers Docker support for Jenkins jobs.
+* AWS: Enables interaction with Amazon Web Services.
+* Slack: Facilitates notifications and interaction with Slack.
+* JUnit: Allows the parsing and displaying of JUnit test results.
+* SonarQube: Facilitates integration with SonarQube for code quality analysis.
 
 
 #### Question: Difference between Parallel and Sequential Jobs.
 **Answer:**
-Sequential Execution: Jobs executed one after another in a sequence.
-Parallel Execution: Jobs executed concurrently, allowing multiple tasks to run simultaneously. Use sequential for dependent tasks and parallel for independent tasks or to speed up the overall build time by leveraging available resources efficiently.
+* Sequential Execution: Jobs executed one after another in a sequence.
+* Parallel Execution: Jobs executed concurrently, allowing multiple tasks to run simultaneously. Use sequential for dependent tasks and parallel for independent tasks or to speed up the overall build time by leveraging available resources efficiently.
 
 
 #### Question: How to trigger job outside of Jenkins.
@@ -334,14 +334,14 @@ Parallel Execution: Jobs executed concurrently, allowing multiple tasks to run s
 
 #### Question: Tell me the difference between an executor and an agent.
 **Answer:**
-Agent: A machine (physical or virtual) that executes Jenkins builds. It can have multiple executors.
-Executor: Represents a single task within a Jenkins agent. An agent can have multiple executors, which run individual jobs or build steps.
+* Agent: A machine (physical or virtual) that executes Jenkins builds. It can have multiple executors.
+* Executor: Represents a single task within a Jenkins agent. An agent can have multiple executors, which run individual jobs or build steps.
 
 
 #### Question: What is the difference between Continous Integration and Continour Delivery ?
 **Answer:**
-Continuous Delivery: It's the practice of ensuring software can be released to production at any time but not necessarily automatically deployed. It focuses on automated testing, deployment-ready code, and enabling frequent releases.
-Continuous Deployment: It extends continuous delivery by automatically deploying each successful build to production without human intervention, assuming all quality checks pass.
+* Continuous Delivery: It's the practice of ensuring software can be released to production at any time but not necessarily automatically deployed. It focuses on automated testing, deployment-ready code, and enabling frequent releases.
+* Continuous Deployment: It extends continuous delivery by automatically deploying each successful build to production without human intervention, assuming all quality checks pass.
 
 
 #### Question: Where is all user data stored on the server ?
@@ -367,14 +367,14 @@ whereas `Pipeline jobs`, defined in Jenkinsfile, have interdependencies and are 
 
 #### Question: What are Credentials in Jenkins, and what types are supported?
 **Answer:**
-Credentials: Stored authentication information used by Jenkins jobs.
-Supported types: Jenkins supports various credential types like Username/Password, Secret text, SSH private key, Certificate, Username/Password (Amazon Web Services), and more.
+* Credentials: Stored authentication information used by Jenkins jobs.
+* Supported types: Jenkins supports various credential types like Username/Password, Secret text, SSH private key, Certificate, Username/Password (Amazon Web Services), and more.
 
 
 #### Question: Explain the difference between a Jenkins executor and a Jenkins worker node.
 **Answer:**
-Executor: Represents a task within a worker node. A worker node can have multiple executors running in parallel.
-Worker Node: The physical or virtual machine where builds are executed, it can run multiple executors and handle several concurrent tasks.
+* Executor: Represents a task within a worker node. A worker node can have multiple executors running in parallel.
+* Worker Node: The physical or virtual machine where builds are executed, it can run multiple executors and handle several concurrent tasks.
 
 
 **Quesiton:** How to manage secrets in Jenkins pipeline securely?
@@ -387,8 +387,8 @@ Worker Node: The physical or virtual machine where builds are executed, it can r
 
 #### Question: How does Jenkins manage its job configurations and logs?
 **Explanation:** 
-Job Configurations: Stored in XML files within the JENKINS_HOME directory, enabling job replication and backup.
-Logs: Jenkins keeps build logs and console outputs as plain text files within the respective job directories for traceability and debugging.
+* Job Configurations: Stored in XML files within the JENKINS_HOME directory, enabling job replication and backup.
+* Logs: Jenkins keeps build logs and console outputs as plain text files within the respective job directories for traceability and debugging.
 
 
 
