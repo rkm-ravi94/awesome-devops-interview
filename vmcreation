@@ -1,0 +1,34 @@
+Connect-AzAccount -Tenantid '7402ba32-e7dc-498c-ba56-0fad5467a840'
+$resourcegroup1 = 'rgvm'
+$location = 'East US'
+
+$name1='harshini'
+
+$cred = Get-Credential -Message "Enter a username and password for the virtual machine."
+
+$vmParams = @{
+  ResourceGroupName = 'rgvm'
+  Name = 'harshini'
+  Location = 'East US'
+  ImageName = 'Win2016Datacenter'
+  
+  Credential = $cred
+  OpenPorts = 3389
+  Size = 'Standard_D2s_v3'
+}
+
+$newVM1 = New-AzVM @vmParams
+
+$vmstatus = Get-AzVM -ResourceGroupName 'rgvm' -Name 'harshini' -Status
+
+
+if ($vmstatus.Statuses.DisplayStatus -eq 'VM running')
+{
+stop-AzVM -ResourceGroupName 'rgvm' -Name 'harshini' -Force
+}
+else
+{
+start-AzVM -ResourceGroupName 'rgvm' -Name 'harshini' 
+
+}
+
