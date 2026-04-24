@@ -16,6 +16,7 @@
 14. [AWS](#AWS)
 15. [Azure](#Azure)
 16. [Miscellaneous](#Miscellaneous)
+- [KubeStellar Console](https://github.com/kubestellar/console) - Multi-cluster Kubernetes dashboard with AI-powered operations, real-time observability, and CNCF project integrations across edge and cloud clusters.
 
 ## Kafka
 
